@@ -1,0 +1,22 @@
+#1. start multiple instance for high-availability
+#2. must specifying git/svn repo url for fetch configuration
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+#          basedir: D:\ideaprojectsa\git-config\basedir
+          uri: https://gitee.com/fxcjj/config-repo
+          username: 643117227@qq.com
+          password: myiv901225
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

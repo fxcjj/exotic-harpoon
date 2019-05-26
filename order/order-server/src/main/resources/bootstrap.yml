@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: order
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG #config server id
+      profile: dev #env, according to applicationName and profile to search config file
+#    stream:
+#      bindings:
+#        input: #binding target
+#          destination: queue.log.messages #消息交换机
+#          binder: local_rabbit
+#          group: order
+#        output:
+#          destination: queue.pretty.log.messages
+#          binder: local_rabbit
+#      binders:
+#        local_rabbit:
+#          type: rabbit
+#          environment:
+#            spring:
+#
+
+#by default, find CONFIG to http://localhost:8761/eureka/.
+#if changed, must specify
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
