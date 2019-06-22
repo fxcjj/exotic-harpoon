@@ -15,6 +15,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+# 和spring的endpoint有关，需要把接口暴露出去
 management:
   endpoints:
     web:

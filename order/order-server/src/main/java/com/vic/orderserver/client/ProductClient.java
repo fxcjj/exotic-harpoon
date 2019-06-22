@@ -4,6 +4,7 @@ package com.vic.orderserver.client;
 
 /**
  * product应用的接口声明
+ * 不应该在这里写,应该在product项目里面写client
  */
 /*@FeignClient(name = "product")
 public interface ProductClient {

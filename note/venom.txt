@@ -1,0 +1,10 @@
+{
+"name":"victor",
+"phone":"13611884691",
+"address":"address1",
+"openid":"zzzzzzzxxxxxxxx",
+"items":[{"productId":"157875196366160022", "productQuantity":1},
+{"productId":"164103465734242707", "productQuantity":5}]
+}
+
+

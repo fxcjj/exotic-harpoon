@@ -1,0 +1,105 @@
+8
+
+服务网关的要素
+1. 稳定性、高可用
+2. 性能、并发性
+3. 安全性
+4. 扩展性
+
+常用的网关方案
+1. Nginx+Lua
+性能和稳定性不错
+2. Kong
+要花钱的
+3. Tyk
+轻量级，go语言
+4. Spring Cloud Zuul
+
+Zuul特点
+1. 路由+过滤器=zuul
+2. 一系列过滤器
+
+
+过滤器
+	pre filters
+	routing filter(s)
+	post filter(s) //已经拿到结果，可以对结果的处理或加工
+	error filter //上面三个发生异常时走过个
+	custom filter //自定义filter，可以放在prefilter和postfilter
+
+配置
+zuul:
+	routes:
+	    # 这个是实例名，随便起
+		aaa:
+		    # 定义访问的路径
+			path: /myProduct/**
+			# path中指定的路径映射到的路径
+			serviceId: product
+			# 针对此应用设置不过滤敏感头（默认过滤Cookie, Set-Cookie, Authorization），即应用接收所有头
+			sensitiveHeaders:
+			#简洁写法
+			#product: /myProduct/**
+    # 禁止不需要暴露的路由,排除某些路由
+    ignored-patterns:
+#    - /product/product/listForOrder
+#    - /myProduct/product/listForOrder
+    # 可使用通配符代替上面两个url
+    - /**/product/listForOrder
+
+# ribbon超时相关
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+# hystrix超时相关
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+# 打开application/routes，不过我试了下，地址不存在
+management:
+	security:
+		enabled: false
+
+
+ZuulConfig
+	@ConfigurationProperties("zuul")
+	@RefreshScope
+	public ZuulProperties zuulProperties() {
+		new ZuulProperties();
+	}
+或者放在启动类上
+
+前置Pre可以做：
+	* 限流
+	* 鉴权
+	* 参数检验
+后置Post可以做：
+	* 统计
+	* 日志
+
+Zuul的高可用
+	* 多个Zuul节点注册到Eureka Server
+	* Nginx和Zuul混搭
+
+全局敏感头
+zuul:
+	#所有服务都可传递cookie
+	sensitive-headers:
+
+CorsConfig
+	@Bean
+	public CorsFilter corsFilter() {
+		final UrlBasedCorsConfigurationSource
+	}
+
+
+
+
+
+
+
+

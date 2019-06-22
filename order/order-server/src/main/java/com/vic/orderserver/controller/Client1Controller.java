@@ -33,7 +33,7 @@ public class Client1Controller {
         RestTemplate restTemplate = new RestTemplate();
         String response = restTemplate.getForObject(url, String.class);
 
-        //3. 第三种方式（使用@LoadBalanced）
+        //3. 第三种方式（在RestTemplateConfig中配置@LoadBalanced）
 //        String response = restTemplate.getForObject("http://PRODUCT/msg", String.class);
 
 

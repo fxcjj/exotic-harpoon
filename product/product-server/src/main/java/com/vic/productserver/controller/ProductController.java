@@ -13,6 +13,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -36,7 +37,11 @@ public class ProductController {
      * @return
      */
     @GetMapping("/list")
-    public ResultVO<ProductVO> list() {
+    public ResultVO<ProductVO> list(HttpServletRequest request) {
+
+        /**
+         * 当使用zuul时，api-gateway不设置sensitiveHeaders为空时，cookies传不过来
+         */
         //1. 查询所有上架的商品
         List<ProductInfo> productInfoList = productService.findUpAll();
 
