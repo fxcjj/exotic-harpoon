@@ -1,2 +1,68 @@
 
 限流早于鉴权
+
+新建user项目
+	config client
+	discovery client
+	mysql
+	redis
+
+bootstrap.yml
+	spring:
+		application:
+			name: user
+		cloud:
+			config:
+				discovery:
+					enabled: true
+					service-id: CONFIG
+			profile: dev
+
+在config-repo新建user-dev.yml
+	# mysql配置
+	datasource:
+		driver-class-name
+	# redis配置
+	redis //
+
+将user项目改造为多模块
+	参考order
+	
+表结构
+	参考spring-sell项目
+
+UserRepository
+	findByOpenid(String openid);
+	
+
+datasource
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
