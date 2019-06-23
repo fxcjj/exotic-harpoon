@@ -16,3 +16,20 @@ zipkin:
 sleuth:
 	sampler:
 		percentage: 1 //默认只将10%的请求发出去
+		
+核心步骤
+	数据采集
+	数据存储
+	查询展示
+
+OpenTracing是一种标准
+优势
+CNCF
+
+
+
+
+
+
+
+
