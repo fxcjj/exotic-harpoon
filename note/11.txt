@@ -1,0 +1,18 @@
+
+order 
+1. 引入依赖
+starter-sleuth
+sleuth-zipkin
+spring-cloud-starter-zipkin
+	包含starter-sleuth, sleuth-zipkin
+
+2. 可在bootstrap.yml中配置日志级别
+
+3. docker搭建zipkin
+docker run -d 
+
+zipkin:
+	base-url: http://localhost:9411/
+sleuth:
+	sampler:
+		percentage: 1 //默认只将10%的请求发出去

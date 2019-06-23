@@ -35,14 +35,23 @@ UserRepository
 	findByOpenid(String openid);
 	
 
-datasource
+finish订单
+1. 先查询订单
+2. 判断订单状态
+3. 修改订单状态为完结
 
 
+买家未登录不能下单！
+
+AuthBuyerFilter
+shoudFilter
+	放什么url拦截
+run
+	做业务判断
 
 
-
-
-
+api-gateway
+	从redis中取允许的url
 
 
 

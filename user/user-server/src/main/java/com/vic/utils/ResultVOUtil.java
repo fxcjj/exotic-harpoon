@@ -21,4 +21,11 @@ public class ResultVOUtil {
         return resultVO;
     }
 
+    public static ResultVO success() {
+        ResultVO resultVO = new ResultVO();
+        resultVO.setCode(0);
+        resultVO.setMsg("success");
+        return resultVO;
+
+    }
 }

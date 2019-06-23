@@ -1,9 +1,11 @@
 package com.vic.controller;
 
+import com.vic.constants.CookieConstants;
 import com.vic.dataobject.UserInfo;
 import com.vic.enums.ResultEnum;
 import com.vic.enums.RoleEnum;
 import com.vic.service.UserService;
+import com.vic.utils.CookieUtils;
 import com.vic.utils.ResultVOUtil;
 import com.vic.vo.ResultVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 @RestController
 @RequestMapping("login")
 public class LoginController {
+
     @Autowired
     UserService userService;
 
@@ -34,7 +37,9 @@ public class LoginController {
             return ResultVOUtil.error(ResultEnum.ROLE_ERROR);
         }
 
+        CookieUtils.set(response, CookieConstants.OPENID, openid, CookieConstants.expire);
 
+        return ResultVOUtil.success();
     }
 
 

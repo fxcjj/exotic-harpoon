@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: user
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG #config server id
+      profile: dev #env, according to applicationName and profile to search config file
+#by default, find CONFIG to http://localhost:8761/eureka/.
+#if changed, must specify
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

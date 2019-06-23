@@ -2,26 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9871822-f4b7-482b-93a5-b0c351b80af2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/user-client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/user-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/user-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/dataobject/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/enums/ResultEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/enums/RoleEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/repository/UserInfoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/utils/ResultVOUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/vo/ResultVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/UserServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/constants/CookieConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/utils/CookieUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/user-server/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/note/10.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/note/9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/note/9.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/order-client/order-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/order/order-client/order-client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/order-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order/order-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/utils/ResultVOUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/utils/ResultVOUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/order/target/" />
     <ignored path="$PROJECT_DIR$/order/order-client/target/" />
@@ -66,111 +57,74 @@
     <session id="-1568180358">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.155" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.66" value="1" />
           <entry key="project.open.time.71" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.75" value="1" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="11" />
-          <entry key="iml" value="3" />
-          <entry key="java" value="222" />
+          <entry key="iml" value="4" />
+          <entry key="java" value="230" />
           <entry key="json" value="1" />
           <entry key="md" value="1" />
           <entry key="properties" value="1" />
           <entry key="txt" value="10" />
-          <entry key="xml" value="45" />
-          <entry key="yml" value="33" />
+          <entry key="xml" value="46" />
+          <entry key="yml" value="35" />
           <entry key="yml-old" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="11" />
-          <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="222" />
+          <entry key="IDEA_MODULE" value="4" />
+          <entry key="JAVA" value="230" />
           <entry key="JSON" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="11" />
           <entry key="Properties" value="1" />
-          <entry key="XML" value="45" />
-          <entry key="YAML" value="33" />
+          <entry key="XML" value="46" />
+          <entry key="YAML" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="1" />
-          <entry key="dummy" value="21" />
-          <entry key="java" value="1629" />
+          <entry key="dummy" value="28" />
+          <entry key="java" value="1920" />
           <entry key="txt" value="360" />
-          <entry key="xml" value="15" />
-          <entry key="yml" value="625" />
+          <entry key="xml" value="40" />
+          <entry key="yml" value="645" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="1629" />
-          <entry key="PLAIN_TEXT" value="381" />
-          <entry key="XML" value="15" />
-          <entry key="YAML" value="625" />
+          <entry key="JAVA" value="1920" />
+          <entry key="PLAIN_TEXT" value="388" />
+          <entry key="XML" value="40" />
+          <entry key="YAML" value="645" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/vic/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/vic/enums/ResultEnum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/order/order-server/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="49" column="4" lean-forward="true" selection-start-line="49" selection-start-column="4" selection-end-line="52" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/user-server/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="52" column="21" lean-forward="true" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/dataobject/OrderDetail.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="275">
+              <caret line="118" column="8" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -208,11 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/utils/ResultVOUtil.java" />
-        <option value="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/service/OrderService.java" />
-        <option value="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/service/impl/OrderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/repository/OrderDetailRepository.java" />
-        <option value="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/repository/OrderMasterRepository.java" />
         <option value="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/exception/OrderException.java" />
         <option value="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/dto/OrderDTO.java" />
         <option value="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/converter/OrderForm2OrderDTOConverter.java" />
@@ -240,7 +189,6 @@
         <option value="$PROJECT_DIR$/api-gateway/src/main/java/com/vic/apigateway/filter/TokenFilter.java" />
         <option value="$PROJECT_DIR$/api-gateway/src/main/java/com/vic/apigateway/exception/RateLimitException.java" />
         <option value="$PROJECT_DIR$/api-gateway/src/main/java/com/vic/apigateway/filter/RateLimitFilter.java" />
-        <option value="$PROJECT_DIR$/order/order-server/pom.xml" />
         <option value="$PROJECT_DIR$/user/pom.xml" />
         <option value="$PROJECT_DIR$/user/user-server/pom.xml" />
         <option value="$PROJECT_DIR$/user/user-common/pom.xml" />
@@ -249,7 +197,6 @@
         <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/vo/ResultVO.java" />
         <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/service/OrderService.java" />
         <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/service/impl/UsererviceImpl.java" />
-        <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/utils/ResultVOUtil.java" />
         <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/enums/RoleEnum.java" />
         <option value="$PROJECT_DIR$/user/user-common/src/main/java/com/vic/entity/UserInfo.java" />
         <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/dataobject/OrderDetail.java" />
@@ -257,8 +204,15 @@
         <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/repository/UserInfoRepository.java" />
         <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/service/UserService.java" />
         <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/enums/ResultEnum.java" />
+        <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/utils/CookieUtils.java" />
+        <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/constants/CookieConstants.java" />
+        <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/utils/ResultVOUtil.java" />
+        <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/OrderServerApplication.java" />
+        <option value="$PROJECT_DIR$/user/user-server/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/UserServerApplication.java" />
+        <option value="$PROJECT_DIR$/order/order-server/pom.xml" />
       </list>
     </option>
   </component>
@@ -282,8 +236,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="372" />
-    <option name="y" value="144" />
+    <option name="x" value="428" />
+    <option name="y" value="35" />
     <option name="width" value="768" />
     <option name="height" value="728" />
   </component>
@@ -312,8 +266,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -375,234 +327,46 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="orderserver" type="462c0819:PsiDirectoryNode" />
-              <item name="dataobject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
-              <item name="order-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="orderserver" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
-              <item name="order-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="orderserver" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
-              <item name="order-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="orderserver" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
-              <item name="order-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="orderserver" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
-              <item name="order-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="orderserver" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="user-client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="user-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="user-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="user-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="user-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="user-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vic" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
               <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="order-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vic" type="462c0819:PsiDirectoryNode" />
-              <item name="dataobject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vic" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vic" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vic" type="462c0819:PsiDirectoryNode" />
+              <item name="orderserver" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
               <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="order-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vic" type="462c0819:PsiDirectoryNode" />
+              <item name="orderserver" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exotic-harpoon" type="b2602c69:ProjectViewProjectNode" />
               <item name="exotic-harpoon" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="order-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vic" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -613,7 +377,7 @@
     <property name="SearchEverywhereHistoryKey" value="FilterConstant&#9;PSI&#9;JAVA://org.springframework.cloud.netflix.zuul.filters.support.FilterConstants&#10;HashMap&#9;PSI&#9;JAVA://java.util.HashMap" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561175306981" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561267231415" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -625,18 +389,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.vic" />
       <recent name="com.vic.utils" />
       <recent name="com.vic.enums" />
       <recent name="com.vic.vo" />
       <recent name="com.vic.repository" />
-      <recent name="com.vic.apigateway" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaprojectsa\exotic-harpoon\user\user-server\src\main" />
       <recent name="D:\ideaprojectsa\exotic-harpoon\user\user-server\src\main\java\com\vic" />
       <recent name="D:\ideaprojectsa\exotic-harpoon\note" />
       <recent name="D:\ideaprojectsa\exotic-harpoon\api-gateway" />
       <recent name="D:\ideaprojectsa\exotic-harpoon\product\product-common\src\main\java\com\vic" />
-      <recent name="D:\ideaprojectsa\exotic-harpoon\product\product-server\src\main\java\com\vic\productserver" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -651,7 +415,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigApplication">
+  <component name="RunManager" selected="Spring Boot.UserServerApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.vic.apigateway.ApiGatewayApplication" />
@@ -708,6 +472,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="user-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.vic.UserServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Spring Boot.OrderServerApplication" />
       <item itemvalue="Spring Boot.Eureka01Application" />
@@ -717,7 +494,13 @@
       <item itemvalue="Spring Boot.ProductServerApplication" />
       <item itemvalue="Spring Boot.ConfigApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
+      <item itemvalue="Spring Boot.UserServerApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.UserServerApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -736,18 +519,20 @@
       <workItem from="1559877372848" duration="15517000" />
       <workItem from="1559961691162" duration="11764000" />
       <workItem from="1561168946701" duration="1638000" />
-      <workItem from="1561172308914" duration="2926000" />
+      <workItem from="1561172308914" duration="6095000" />
+      <workItem from="1561205918255" duration="1282000" />
+      <workItem from="1561266295682" duration="802000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41496000" />
+    <option name="totallyTimeSpent" value="46749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26331812" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23820396" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -758,7 +543,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3282572" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32994923" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2961083" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.7529611" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -812,72 +597,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-zuul/2.0.2.RELEASE/spring-cloud-netflix-zuul-2.0.2.RELEASE.jar!/org/springframework/cloud/netflix/zuul/filters/support/FilterConstants.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1.jar!/com/netflix/zuul/ZuulFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1.jar!/com/netflix/zuul/IZuulFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/note/8.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="89" column="19" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/note/7.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/note/6.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="64" column="12" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-gateway/src/main/java/com/vic/apigateway/config/ZuulConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1-sources.jar!/com/netflix/zuul/ZuulFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="59" column="7" lean-forward="true" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1-sources.jar!/com/netflix/zuul/IZuulFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/controller/ProductController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -924,13 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/eureka01/src/main/java/com/vic/eureka01/Eureka01Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -987,21 +699,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/order/order-server/order-server.iml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="14" selection-end-line="96" selection-end-column="10" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1031,20 +733,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-common/src/main/java/com/vic/entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-common/src/main/java/com/vic/repository/UserInfoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/user/user-common/src/main/java/com/vic/entity.java" />
+    <entry file="file://$PROJECT_DIR$/user/user-common/src/main/java/com/vic/repository/UserInfoRepository.java" />
     <entry file="file://$PROJECT_DIR$/user/user-client/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1080,16 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/vic/utils/ResultVOUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/vic/enums/RoleEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1100,37 +780,13 @@
     <entry file="file://$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/dataobject/OrderDetail.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/order/order-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="49" column="4" lean-forward="true" selection-start-line="49" selection-start-column="4" selection-end-line="52" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="52" column="21" lean-forward="true" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-common/src/main/java/com/vic/entity/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/vic/dataobject/ProductInfo.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/vic/dataobject/OrderMaster.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/user/user-common/src/main/java/com/vic/entity/UserInfo.java" />
+    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/vic/dataobject/ProductInfo.java" />
+    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/vic/dataobject/OrderMaster.java" />
     <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/vic/dataobject/UserInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1142,9 +798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1159,26 +812,121 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/vic/utils/CookieUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/vic/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+        <state relative-caret-position="238">
+          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/vic/UserServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka/eureka01/src/main/java/com/vic/eureka01/Eureka01Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/order-server/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/vic/utils/ResultVOUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/vic/constants/CookieConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/user/user-server/src/main/java/com/vic/enums/ResultEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/user-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="52" column="42" lean-forward="true" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/order.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/order-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="118" column="8" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
         </state>
       </provider>
     </entry>
