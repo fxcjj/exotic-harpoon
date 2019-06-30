@@ -7,6 +7,15 @@ spring:
         enabled: true
         service-id: CONFIG #config server id
       profile: dev #env, according to applicationName and profile to search config file
+  zipkin:
+    base-url: http://192.168.6.131:9411
+    enabled: true
+  sleuth:
+    sampler:
+      probability: 1.0
+    web:
+      client:
+        enabled: true
 eureka:
   client:
     service-url:

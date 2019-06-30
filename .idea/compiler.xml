@@ -28,7 +28,7 @@
       <module name="api-gateway" target="1.8" />
       <module name="client01" target="1.8" />
       <module name="config" target="1.8" />
-      <module name="eureka" target="1.8" />
+      <module name="eureka" target="1.5" />
       <module name="eureka01" target="1.8" />
       <module name="eureka02" target="1.8" />
       <module name="eureka03" target="1.8" />
@@ -45,5 +45,24 @@
       <module name="user-common" target="1.8" />
       <module name="user-server" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway" options="-parameters" />
+      <module name="client01" options="-parameters" />
+      <module name="config" options="-parameters" />
+      <module name="eureka01" options="-parameters" />
+      <module name="eureka02" options="-parameters" />
+      <module name="eureka03" options="-parameters" />
+      <module name="order-client" options="-parameters" />
+      <module name="order-common" options="-parameters" />
+      <module name="order-server" options="-parameters" />
+      <module name="product-client" options="-parameters" />
+      <module name="product-common" options="-parameters" />
+      <module name="product-server" options="-parameters" />
+      <module name="user-client" options="-parameters" />
+      <module name="user-common" options="-parameters" />
+      <module name="user-server" options="-parameters" />
+    </option>
   </component>
 </project>
