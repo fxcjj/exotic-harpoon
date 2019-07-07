@@ -15,7 +15,7 @@ zipkin:
 	base-url: http://localhost:9411/
 sleuth:
 	sampler:
-		percentage: 1 //默认只将10%的请求发出去
+		percentage: 0.1 //默认只将10%的请求发出去
 		
 核心步骤
 	数据采集
