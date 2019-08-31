@@ -1,0 +1,24 @@
+
+docker run -p 
+hub.c.163.com/springcloud/eureka
+
+
+
+
+Dockerfile
+FROM hub.c.163.com/library/java:8-alpine
+ADD target/*.jar app.jar
+EXPOSE 8761
+ENTRYPOINT ["java", "-jar", "/app.jar"]
+
+
+基于Dockerfile生成镜像
+推送到网易云
+使用rancher添加服务
+eureka互相注册达到高可用
+优先使用ip选项prefer-ip
+为api-gateway添加lb-api-gateway，所有请求通过lb-api-gateway请求转发
+
+
+
+
