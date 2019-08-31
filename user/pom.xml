@@ -14,39 +14,41 @@
         <module>user-server</module>
     </modules>
 
+    <!--
+    此处是以继承方式引入进来，使用非继承方式代替
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.0.6.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
+        <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;
+    </parent>-->
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <spring-cloud.version>Finchley.SR2</spring-cloud.version>
+        <spring-boot.version>2.0.6.RELEASE</spring-boot.version>
+
         <user-common.version>0.0.1-SNAPSHOT</user-common.version>
         <product-client.version>0.0.1-SNAPSHOT</product-client.version>
     </properties>
 
-    <dependencies>
-        <!--<dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
-        </dependency>-->
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-client</artifactId>
-        </dependency>
-
-    </dependencies>
-
     <dependencyManagement>
         <dependencies>
 
-            <!-- 非继承的方式来引入这段依赖管理配置，后面需要声明ga -->
+            <!-- 非继承的方式 -->
+
+            <!-- spring boot -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- spring cloud -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
