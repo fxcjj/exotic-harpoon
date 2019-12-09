@@ -51,7 +51,7 @@
 
             <!--
             非继承方式引入
-            此依赖包含了spring-boot-dependencies，可以直接使用spring-boot-dependencies
+            此依赖包含了spring-boot-dependencies，它是boot相关依赖，直接使用spring-boot-dependencies即可
              -->
             <!--<dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -69,7 +69,7 @@
                 <scope>import</scope>
             </dependency>
 
-            <!-- 非继承的方式来引入这段依赖管理配置，后面需要声明ga -->
+            <!-- 非继承的方式来引入这段依赖管理配置，后面只需要声明ga -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
