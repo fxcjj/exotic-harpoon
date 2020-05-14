@@ -1,6 +1,6 @@
 package com.vic.repository;
 
-import com.vic.dataobject.UserInfo;
+import com.vic.entity.UserInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

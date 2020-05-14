@@ -34,6 +34,7 @@
         <product-client.version>0.0.1-SNAPSHOT</product-client.version>
     </properties>
 
+    <!-- 管理依赖 -->
     <dependencyManagement>
         <dependencies>
 
@@ -56,6 +57,9 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <!--
+            这个应该是自己项目使用-->
             <dependency>
                 <groupId>com.vic</groupId>
                 <artifactId>user-common</artifactId>
@@ -78,6 +82,12 @@
                 <version>1.2.6</version>
             </dependency>
 
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>4.0.1</version>
+                <scope>provided</scope>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>

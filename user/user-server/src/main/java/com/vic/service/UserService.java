@@ -1,7 +1,7 @@
 package com.vic.service;
 
 
-import com.vic.dataobject.UserInfo;
+import com.vic.entity.UserInfo;
 
 public interface UserService {
     UserInfo findByOpenid(String openid);

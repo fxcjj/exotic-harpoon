@@ -1,6 +1,6 @@
 package com.vic.service.impl;
 
-import com.vic.dataobject.UserInfo;
+import com.vic.entity.UserInfo;
 import com.vic.repository.UserInfoRepository;
 import com.vic.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

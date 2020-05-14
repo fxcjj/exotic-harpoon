@@ -61,6 +61,14 @@
                 <artifactId>fastjson</artifactId>
                 <version>1.2.6</version>
             </dependency>
+
+            <!-- https://mvnrepository.com/artifact/io.zipkin.zipkin2/zipkin -->
+            <!--<dependency>
+                <groupId>io.zipkin.zipkin2</groupId>
+                <artifactId>zipkin</artifactId>
+                <version>2.18.0</version>
+            </dependency>-->
+
         </dependencies>
     </dependencyManagement>
 

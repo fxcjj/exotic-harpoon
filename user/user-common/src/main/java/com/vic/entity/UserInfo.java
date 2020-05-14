@@ -1,4 +1,4 @@
-package com.vic.dataobject;
+package com.vic.entity;
 
 import lombok.Data;
 
