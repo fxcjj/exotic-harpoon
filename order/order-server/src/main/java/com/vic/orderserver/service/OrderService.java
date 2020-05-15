@@ -1,7 +1,6 @@
 package com.vic.orderserver.service;
 
-
-import com.vic.orderserver.dto.OrderDTO;
+import com.vic.dto.OrderDTO;
 
 public interface OrderService {
 

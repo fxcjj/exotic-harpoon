@@ -1,8 +1,8 @@
 package com.vic.orderserver.controller;
 
-import com.vic.DecreaseStockInput;
-import com.vic.ProductInfoOutput;
-import com.vic.product.client.ProductClient;
+import com.vic.bo.product.DecreaseStockInput;
+import com.vic.bo.product.ProductInfoOutput;
+import com.vic.feign.product.ProductClient;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

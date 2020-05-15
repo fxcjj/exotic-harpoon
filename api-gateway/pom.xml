@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.vic</groupId>
     <artifactId>api-gateway</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.3.0</version>
     <name>api-gateway</name>
     <description>Demo project for Spring Boot</description>
 

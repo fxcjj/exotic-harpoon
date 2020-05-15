@@ -8,43 +8,35 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="client01" />
+        <module name="comn-common" />
         <module name="eureka03" />
-        <module name="order-client" />
-        <module name="product-common" />
-        <module name="user-client" />
         <module name="config" />
-        <module name="product-client" />
         <module name="eureka02" />
-        <module name="user-common" />
         <module name="order-server" />
-        <module name="user-server" />
         <module name="product-server" />
         <module name="eureka" />
         <module name="eureka01" />
         <module name="api-gateway" />
-        <module name="order-common" />
+        <module name="common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="api-gateway" target="1.8" />
       <module name="client01" target="1.8" />
+      <module name="comn" target="1.8" />
+      <module name="comn-common" target="1.8" />
       <module name="config" target="1.8" />
       <module name="eureka" target="1.8" />
       <module name="eureka01" target="1.8" />
       <module name="eureka02" target="1.8" />
       <module name="eureka03" target="1.8" />
+      <module name="exotic-harpoon" target="1.8" />
       <module name="order" target="1.8" />
-      <module name="order-client" target="1.8" />
-      <module name="order-common" target="1.8" />
       <module name="order-server" target="1.8" />
       <module name="product" target="1.8" />
       <module name="product-client" target="1.8" />
-      <module name="product-common" target="1.8" />
       <module name="product-server" target="1.8" />
       <module name="user" target="1.8" />
-      <module name="user-client" target="1.8" />
-      <module name="user-common" target="1.8" />
-      <module name="user-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -55,15 +47,9 @@
       <module name="eureka01" options="-parameters" />
       <module name="eureka02" options="-parameters" />
       <module name="eureka03" options="-parameters" />
-      <module name="order-client" options="" />
-      <module name="order-common" options="" />
       <module name="order-server" options="" />
       <module name="product-client" options="" />
-      <module name="product-common" options="" />
       <module name="product-server" options="" />
-      <module name="user-client" options="" />
-      <module name="user-common" options="" />
-      <module name="user-server" options="" />
     </option>
   </component>
 </project>

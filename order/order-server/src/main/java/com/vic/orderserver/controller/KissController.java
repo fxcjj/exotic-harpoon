@@ -16,7 +16,7 @@ public class KissController {
     @Autowired
     private Processor pipe;
 
-    @GetMapping("/sendMessage")
+    @GetMapping("sendMessage")
     public void process() {
         String msg = "hi, honey, " + new Date();
         pipe.input().send(MessageBuilder.withPayload(msg).build());

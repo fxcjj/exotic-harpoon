@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @Slf4j
-@RequestMapping("/girls")
+@RequestMapping("girls")
 public class GirlController {
 
     @Autowired
     private GirlConfig girlConfig;
 
-    @GetMapping("/print")
+    @GetMapping("print")
     public String print() {
         return "name: " + girlConfig.getName() + ", age: " + girlConfig.getAge();
     }

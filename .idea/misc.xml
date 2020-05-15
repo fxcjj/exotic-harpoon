@@ -18,7 +18,19 @@
         <option value="$PROJECT_DIR$/config/pom.xml" />
         <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/user/pom.xml" />
+        <option value="$PROJECT_DIR$/comn/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/order/order-client/pom.xml" />
+        <option value="$PROJECT_DIR$/order/order-common/pom.xml" />
+        <option value="$PROJECT_DIR$/product/product-client/pom.xml" />
+        <option value="$PROJECT_DIR$/user/user-client/pom.xml" />
+        <option value="$PROJECT_DIR$/user/user-common/pom.xml" />
+        <option value="$PROJECT_DIR$/user/user-server/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />

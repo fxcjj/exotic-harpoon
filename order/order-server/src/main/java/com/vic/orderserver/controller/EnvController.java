@@ -12,14 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @Slf4j
-@RequestMapping("/env")
+@RequestMapping("env")
 @RefreshScope
 public class EnvController {
 
     @Value("${env}")
     private String env;
 
-    @GetMapping("/print")
+    @GetMapping("print")
     public String print() {
         return env;
     }

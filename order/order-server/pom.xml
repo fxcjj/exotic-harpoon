@@ -4,7 +4,7 @@
     <parent>
         <artifactId>order</artifactId>
         <groupId>com.vic</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>1.3.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -23,12 +23,12 @@
 
         <dependency>
             <groupId>com.vic</groupId>
-            <artifactId>order-common</artifactId>
+            <artifactId>comn-common</artifactId>
         </dependency>
 
         <dependency>
             <groupId>com.vic</groupId>
-            <artifactId>product-client</artifactId>
+            <artifactId>comn-server</artifactId>
         </dependency>
 
         <dependency>

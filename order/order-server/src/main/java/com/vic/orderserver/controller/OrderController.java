@@ -1,13 +1,12 @@
 package com.vic.orderserver.controller;
 
-import com.vic.orderserver.converter.OrderForm2OrderDTOConverter;
-import com.vic.orderserver.dto.OrderDTO;
-import com.vic.orderserver.enums.ResultEnum;
-import com.vic.orderserver.exception.OrderException;
-import com.vic.orderserver.form.OrderForm;
+import com.vic.bo.order.OrderForm;
+import com.vic.converter.OrderForm2OrderDTOConverter;
+import com.vic.dto.OrderDTO;
+import com.vic.enums.ResultEnum;
+import com.vic.exception.OrderException;
 import com.vic.orderserver.service.OrderService;
-import com.vic.orderserver.utils.ResultVOUtil;
-import com.vic.orderserver.vo.ResultVO;
+import com.vic.vo.ResultVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.CollectionUtils;
@@ -21,7 +20,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/order")
+@RequestMapping("order")
 @Slf4j
 public class OrderController {
 
@@ -35,8 +34,8 @@ public class OrderController {
      * 4. 扣库存(调用商品服务)
      * 5. 订单入库
      */
-    @PostMapping("/create")
-    public ResultVO<Map<String, String>> create(@Valid OrderForm orderForm,
+    @PostMapping("create")
+    public ResultVo<Map<String, String>> create(@Valid OrderForm orderForm,
                                                 BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             log.error("【创建订单】参数不正确, orderForm={}", orderForm);
@@ -54,7 +53,7 @@ public class OrderController {
 
         Map<String, String> map = new HashMap<>();
         map.put("orderId", result.getOrderId());
-        return ResultVOUtil.success(map);
+        return ResultVo.success(map);
 
     }
 }
