@@ -1,7 +1,7 @@
-package com.vic.productserver.exception;
+package com.vic.exception;
 
 
-import com.vic.productserver.enums.ResultEnum;
+import com.vic.enums.ResultEnum;
 
 public class ProductException extends RuntimeException {
 

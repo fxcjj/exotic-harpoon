@@ -5,84 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9871822-f4b7-482b-93a5-b0c351b80af2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/comn/comn-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comn/comn-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comn/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/exotic-harpoon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/exotic-harpoon.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/client01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/client01/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/eureka01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/eureka01/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/eureka02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/eureka02/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/eureka03/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/eureka03/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-client/order-client.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-client/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-client/src/main/java/com/vic/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-common/order-common.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-common/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-common/src/main/java/com/vic/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-common/target/classes/com/vic/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order/order-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/client/ProductClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/controller/Client2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/controller/Client2Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/controller/EnvController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/controller/EnvController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/controller/GirlController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/controller/GirlController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/controller/KissController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/controller/KissController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/converter/OrderForm2OrderDTOConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/converter/OrderForm2OrderDTOConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/dataobject/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/entity/order/OrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/dataobject/OrderMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/entity/order/OrderMaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/dataobject/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/entity/order/ProductInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/dto/CartDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/dto/CartDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/dto/OrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/enums/OrderStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/enums/order/OrderStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/enums/PayStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/enums/order/PayStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/enums/ResultEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/exception/OrderException.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/exception/OrderException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/form/OrderForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/bo/order/OrderForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/utils/KeyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/utils/KeyUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/utils/ResultVOUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/vo/ResultVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/entity/order/ProductInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/enums/ResultEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-client/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-client/product-client.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-client/src/main/java/com/vic/product/client/ProductClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-server/src/main/java/com/vic/feign/product/ProductClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-client/target/classes/com/vic/product/client/ProductClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-common/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-common/product-common.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-common/src/main/java/com/vic/DecreaseStockInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/bo/product/DecreaseStockInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-common/src/main/java/com/vic/IncreaseMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/bo/product/IncreaseMemory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-common/src/main/java/com/vic/ProductInfoOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/bo/product/ProductInfoOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-common/target/classes/com/vic/DecreaseStockInput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-common/target/classes/com/vic/IncreaseMemory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-common/target/classes/com/vic/ProductInfoOutput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/dataobject/ProductCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/entity/product/ProductCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/dataobject/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/entity/product/ProductInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/enums/ProductStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/enums/product/ProductStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/enums/ResultEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/exception/ProductException.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/exception/ProductException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/repository/ProductCategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/repository/ProductCategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/repository/ProductInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/repository/ProductInfoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/service/ProductCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/service/ProductCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/service/impl/ProductCategoryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/service/impl/ProductServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/utils/ResultVOUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/vo/ProductInfoVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/vo/product/ProductInfoVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/vo/ProductVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/vo/product/ProductVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/vo/ResultVO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-client/src/main/java/com/vic/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-common/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-common/src/main/java/com/vic/annotation/CheckRepeatSubmit.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-server/src/main/java/com/vic/annotation/CheckRepeatSubmit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-common/src/main/java/com/vic/aspect/CheckRepeatSubmitAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-server/src/main/java/com/vic/aspect/CheckRepeatSubmitAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-common/src/main/java/com/vic/component/CacheComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-server/src/main/java/com/vic/component/CacheComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-common/src/main/java/com/vic/constants/CookieConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/constants/CookieConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-common/src/main/java/com/vic/entity/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/entity/user/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-common/src/main/java/com/vic/enums/CacheKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/enums/CacheKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-common/src/main/java/com/vic/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/enums/ResultEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-common/src/main/java/com/vic/enums/RoleEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/enums/RoleEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-common/src/main/java/com/vic/utils/CookieUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/utils/CookieUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-common/src/main/java/com/vic/utils/ResultVOUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-common/src/main/java/com/vic/vo/ResultVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/comn/comn-common/src/main/java/com/vic/vo/ResultVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user-server/src/test/java/com/vic/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user-client/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user-server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user-server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/UserServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/repository/UserInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/repository/UserInfoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/service/impl/UserServiceImpl.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +130,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575877540351" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/comn/comn-server/src/main/java/com/vic" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/user/user-server/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -183,19 +139,22 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.vic" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.vic.exception" />
       <recent name="com.vic.converter" />
       <recent name="com.vic.feign.product" />
       <recent name="com.vic.component" />
-      <recent name="com.vic.exception" />
       <recent name="com.vic.aspect" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\github\exotic-harpoon\comn\comn-server\src\main\java\com\vic" />
-      <recent name="D:\github\exotic-harpoon\comn\comn-common\src\main\java\com\vic\dto" />
-      <recent name="D:\github\exotic-harpoon\comn\comn-common\src\main\java\com\vic\bo\order" />
-      <recent name="D:\github\exotic-harpoon\comn\comn-common\src\main\java\com\vic\utils" />
-      <recent name="D:\github\exotic-harpoon\comn\comn-common\src\main\java\com\vic\enums\order" />
+      <recent name="D:\github\exotic-harpoon\user\user-server\src\main\resources" />
+      <recent name="D:\github\exotic-harpoon\comn\comn-common\src\main\java\com\vic\vo\product" />
+      <recent name="D:\github\exotic-harpoon\comn\comn-common\src\main\java\com\vic\enums\product" />
+      <recent name="D:\github\exotic-harpoon\comn\comn-common\src\main\java\com\vic\entity\product" />
+      <recent name="D:\github\exotic-harpoon\user\user-server\src\main\java\com\vic\service" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ProductServerApplication">
@@ -325,7 +284,7 @@
       <workItem from="1575854617821" duration="3908000" />
       <workItem from="1586310948062" duration="1856000" />
       <workItem from="1589437870657" duration="4996000" />
-      <workItem from="1589510557732" duration="7377000" />
+      <workItem from="1589510557732" duration="9826000" />
     </task>
     <task id="LOCAL-00001" summary="ignore file">
       <created>1567222211954</created>
@@ -369,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589442270233</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adjust maven structure">
+      <created>1589532043467</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589532043467</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -403,42 +369,54 @@
     <option name="LAST_COMMIT_MESSAGE" value="adjust maven structure" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="957" y="209" key="#Project_Structure" timestamp="1589531083704">
+    <state x="957" y="209" key="#Project_Structure" timestamp="1589533338717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="957" y="209" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1589531083704" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589530303883">
+    <state x="957" y="209" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1589533338717" />
+    <state x="580" y="198" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1589533237847">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589530303883" />
-    <state x="425" y="113" key="CommitChangelistDialog2" timestamp="1589442269815">
+    <state x="580" y="198" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589533237847" />
+    <state x="724" y="378" width="471" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589533473299">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="425" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589442269815" />
+    <state x="724" y="378" width="471" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1589533473299" />
+    <state x="571" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589534466277">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="571" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589534466277" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589533349885">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589533349885" />
+    <state x="425" y="113" key="CommitChangelistDialog2" timestamp="1589532042347">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="425" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589532042347" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1589528467031">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589528467031" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1589531066775">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1589532895788">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589531066775" />
-    <state width="1877" height="213" key="GridCell.Tab.0.bottom" timestamp="1589531741949">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589532895788" />
+    <state width="1877" height="213" key="GridCell.Tab.0.bottom" timestamp="1589532915557">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589531741949" />
-    <state width="1877" height="213" key="GridCell.Tab.0.center" timestamp="1589531741949">
+    <state width="1877" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589532915557" />
+    <state width="1877" height="213" key="GridCell.Tab.0.center" timestamp="1589532915557">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="213" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589531741949" />
-    <state width="1877" height="213" key="GridCell.Tab.0.left" timestamp="1589531741948">
+    <state width="1877" height="213" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589532915557" />
+    <state width="1877" height="213" key="GridCell.Tab.0.left" timestamp="1589532915556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="213" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589531741948" />
-    <state width="1877" height="213" key="GridCell.Tab.0.right" timestamp="1589531741949">
+    <state width="1877" height="213" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589532915556" />
+    <state width="1877" height="213" key="GridCell.Tab.0.right" timestamp="1589532915557">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="213" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589531741949" />
+    <state width="1877" height="213" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589532915557" />
     <state x="706" y="230" key="RollbackChangesDialog" timestamp="1589525499273">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -447,10 +425,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589530119695" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589442271331">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589532044941">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589442271331" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589532044941" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589442135186">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -459,10 +437,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="636" y="253" width="786" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589528522037" />
-    <state x="586" y="283" key="new project wizard" timestamp="1589531080958">
+    <state x="586" y="283" key="new project wizard" timestamp="1589533329396">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="586" y="283" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1589531080958" />
+    <state x="586" y="283" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1589533329396" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589440099478">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

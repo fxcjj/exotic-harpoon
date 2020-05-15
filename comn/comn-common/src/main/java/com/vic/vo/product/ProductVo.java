@@ -1,4 +1,4 @@
-package com.vic.productserver.vo;
+package com.vic.vo.product;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
@@ -6,7 +6,7 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class ProductVO {
+public class ProductVo {
 
     @JsonProperty("name")
     private String categoryName;
@@ -15,6 +15,6 @@ public class ProductVO {
     private Integer categoryType;
 
     @JsonProperty("foods")
-    private List<ProductInfoVO> productInfoVOList;
+    private List<ProductInfoVo> productInfoVoList;
 
 }

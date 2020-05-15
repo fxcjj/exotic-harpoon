@@ -13,7 +13,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>product-client</module>
         <module>product-server</module>
     </modules>
 

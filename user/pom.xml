@@ -13,17 +13,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>user-client</module>
         <module>user-server</module>
     </modules>
-
-    <!--<dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>javax.servlet</groupId>
-                <artifactId>javax.servlet-api</artifactId>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>-->
 
 </project>

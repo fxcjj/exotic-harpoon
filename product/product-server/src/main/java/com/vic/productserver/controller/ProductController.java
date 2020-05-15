@@ -1,14 +1,13 @@
 package com.vic.productserver.controller;
 
-import com.vic.DecreaseStockInput;
-import com.vic.productserver.dataobject.ProductCategory;
-import com.vic.productserver.dataobject.ProductInfo;
+import com.vic.bo.product.DecreaseStockInput;
+import com.vic.entity.product.ProductCategory;
+import com.vic.entity.product.ProductInfo;
 import com.vic.productserver.service.ProductCategoryService;
 import com.vic.productserver.service.ProductService;
-import com.vic.productserver.utils.ResultVOUtil;
-import com.vic.productserver.vo.ProductInfoVO;
-import com.vic.productserver.vo.ProductVO;
-import com.vic.productserver.vo.ResultVO;
+import com.vic.vo.ResultVo;
+import com.vic.vo.product.ProductInfoVo;
+import com.vic.vo.product.ProductVo;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -19,7 +18,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/product")
+@RequestMapping("product")
 public class ProductController {
 
     @Autowired
@@ -36,8 +35,8 @@ public class ProductController {
      *
      * @return
      */
-    @GetMapping("/list")
-    public ResultVO<ProductVO> list(HttpServletRequest request) {
+    @GetMapping("list")
+    public ResultVo<List<ProductVo>> list(HttpServletRequest request) {
 
         /**
          * 当使用zuul时，api-gateway不设置sensitiveHeaders为空时，cookies传不过来
@@ -54,25 +53,25 @@ public class ProductController {
         List<ProductCategory> categoryList = categoryService.findByCategoryTypeIn(categoryTypeList);
 
         //4. 构造数据
-        List<ProductVO> productVOList = new ArrayList<>();
+        List<ProductVo> productVoList = new ArrayList<>();
         for (ProductCategory c : categoryList) {
-            ProductVO productVO = new ProductVO();
+            ProductVo productVO = new ProductVo();
             productVO.setCategoryName(c.getCategoryName());
             productVO.setCategoryType(c.getCategoryType());
 
-            List<ProductInfoVO> productInfoVOList = new ArrayList<>();
+            List<ProductInfoVo> productInfoVoList = new ArrayList<>();
             for (ProductInfo p : productInfoList) {
                 if (c.getCategoryType().intValue() == p.getCategoryType().intValue()) {
-                    ProductInfoVO productInfoVO = new ProductInfoVO();
+                    ProductInfoVo productInfoVO = new ProductInfoVo();
                     BeanUtils.copyProperties(p, productInfoVO);
-                    productInfoVOList.add(productInfoVO);
+                    productInfoVoList.add(productInfoVO);
                 }
             }
-            productVO.setProductInfoVOList(productInfoVOList);
-            productVOList.add(productVO);
+            productVO.setProductInfoVoList(productInfoVoList);
+            productVoList.add(productVO);
         }
 
-        return ResultVOUtil.success(productVOList);
+        return ResultVo.success(productVoList);
     }
 
     /**
@@ -81,13 +80,13 @@ public class ProductController {
      * @param productIdList
      * @return
      */
-    @PostMapping("/listForOrder")
+    @PostMapping("listForOrder")
     public List<ProductInfo> listForOrder(@RequestBody List<String> productIdList) {
         return productService.findList(productIdList);
     }
 
 
-    @PostMapping("/decreaseStock")
+    @PostMapping("decreaseStock")
     public void decreaseStock(@RequestBody List<DecreaseStockInput> cartDTOList) {
         productService.decreaseStock(cartDTOList);
     }

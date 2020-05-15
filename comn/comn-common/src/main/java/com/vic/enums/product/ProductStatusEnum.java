@@ -1,4 +1,4 @@
-package com.vic.productserver.enums;
+package com.vic.enums.product;
 
 import lombok.Getter;
 

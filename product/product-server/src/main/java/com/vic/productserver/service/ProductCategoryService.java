@@ -1,11 +1,19 @@
 package com.vic.productserver.service;
 
-
-import com.vic.productserver.dataobject.ProductCategory;
+import com.vic.entity.product.ProductCategory;
+import com.vic.productserver.repository.ProductCategoryRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-public interface ProductCategoryService {
+@Service
+public class ProductCategoryService {
 
-    List<ProductCategory> findByCategoryTypeIn(List<Integer> categoryTypeList);
+    @Autowired
+    ProductCategoryRepository productCategoryRepository;
+
+    public List<ProductCategory> findByCategoryTypeIn(List<Integer> categoryTypeList) {
+        return productCategoryRepository.findByCategoryTypeIn(categoryTypeList);
+    }
 }

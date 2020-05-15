@@ -1,4 +1,4 @@
-package com.vic.productserver.dataobject;
+package com.vic.entity.product;
 
 import lombok.Data;
 

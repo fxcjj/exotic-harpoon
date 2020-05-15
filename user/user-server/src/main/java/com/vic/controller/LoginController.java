@@ -1,7 +1,7 @@
 package com.vic.controller;
 
 import com.vic.constants.CookieConstants;
-import com.vic.entity.UserInfo;
+import com.vic.entity.user.UserInfo;
 import com.vic.enums.ResultEnum;
 import com.vic.enums.RoleEnum;
 import com.vic.service.UserService;
@@ -32,11 +32,11 @@ public class LoginController {
             return ResultVo.fail(ResultEnum.LOGIN_FAIL);
         }
 
-        if(RoleEnum.BUYER.getCode() != userInfo.getRole()) {
+        if(!RoleEnum.BUYER.getCode().equals(userInfo.getRole())) {
             return ResultVo.fail(ResultEnum.ROLE_ERROR);
         }
 
-        CookieUtils.set(response, CookieConstants.OPENID, openid, CookieConstants.expire);
+        CookieUtils.set(response, CookieConstants.OPENID, openid, CookieConstants.EXPIRE);
 
         return ResultVo.success();
     }

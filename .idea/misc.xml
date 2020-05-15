@@ -20,6 +20,7 @@
         <option value="$PROJECT_DIR$/user/pom.xml" />
         <option value="$PROJECT_DIR$/comn/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/user/user-server/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -29,7 +30,6 @@
         <option value="$PROJECT_DIR$/product/product-client/pom.xml" />
         <option value="$PROJECT_DIR$/user/user-client/pom.xml" />
         <option value="$PROJECT_DIR$/user/user-common/pom.xml" />
-        <option value="$PROJECT_DIR$/user/user-server/pom.xml" />
       </set>
     </option>
   </component>

@@ -1,10 +1,10 @@
-package com.vic.productserver.vo;
+package com.vic.vo.product;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
-public class ProductInfoVO {
+public class ProductInfoVo {
 
     @JsonProperty("id")
     private String productId;

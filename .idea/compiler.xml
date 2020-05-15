@@ -11,8 +11,10 @@
         <module name="comn-common" />
         <module name="eureka03" />
         <module name="config" />
+        <module name="comn-server" />
         <module name="eureka02" />
         <module name="order-server" />
+        <module name="user-server" />
         <module name="product-server" />
         <module name="eureka" />
         <module name="eureka01" />
@@ -25,6 +27,7 @@
       <module name="client01" target="1.8" />
       <module name="comn" target="1.8" />
       <module name="comn-common" target="1.8" />
+      <module name="comn-server" target="1.8" />
       <module name="config" target="1.8" />
       <module name="eureka" target="1.8" />
       <module name="eureka01" target="1.8" />
@@ -37,6 +40,7 @@
       <module name="product-client" target="1.8" />
       <module name="product-server" target="1.8" />
       <module name="user" target="1.8" />
+      <module name="user-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -50,6 +54,8 @@
       <module name="order-server" options="" />
       <module name="product-client" options="" />
       <module name="product-server" options="" />
+      <module name="user" options="" />
+      <module name="user-server" options="" />
     </option>
   </component>
 </project>

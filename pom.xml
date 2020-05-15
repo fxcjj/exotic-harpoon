@@ -17,7 +17,7 @@
         <module>order</module>
         <module>product</module>
         <module>user</module>
-        <module>comn/comn-server</module>
+        <module>user</module>
     </modules>
 
     <properties>
