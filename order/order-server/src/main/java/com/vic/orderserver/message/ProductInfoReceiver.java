@@ -1,7 +1,7 @@
 package com.vic.orderserver.message;
 
 import com.alibaba.fastjson.JSON;
-import com.vic.ProductInfoOutput;
+import com.vic.bo.product.ProductInfoOutput;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.Queue;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;

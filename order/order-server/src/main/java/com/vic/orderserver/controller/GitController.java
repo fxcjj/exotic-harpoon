@@ -1,28 +1,28 @@
 package com.vic.orderserver.controller;
 
+import com.vic.orderserver.config.GirlConfig;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 1. 第一种服务之间通信方式RestTemplate, @LoadBalanced
+ * 测试是否取到git上的配置文件
  */
 @RestController
 @Slf4j
-@RequestMapping("env")
+@RequestMapping("git")
 @RefreshScope
-public class EnvController {
+public class GitController {
 
-    @Value("${env}")
-    private String env;
+    @Autowired
+    private GirlConfig girlConfig;
 
-    @GetMapping("print")
-    public String print() {
-        return env;
+    @GetMapping("config")
+    public GirlConfig config() {
+        return girlConfig;
     }
-
 
 }

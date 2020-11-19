@@ -1,17 +1,17 @@
 package com.vic.orderserver.service.impl;
 
-import com.vic.DecreaseStockInput;
-import com.vic.ProductInfoOutput;
-import com.vic.orderserver.dataobject.OrderDetail;
-import com.vic.orderserver.dataobject.OrderMaster;
-import com.vic.orderserver.dto.OrderDTO;
-import com.vic.orderserver.enums.OrderStatusEnum;
-import com.vic.orderserver.enums.PayStatusEnum;
+import com.vic.bo.product.DecreaseStockInput;
+import com.vic.bo.product.ProductInfoOutput;
+import com.vic.dto.OrderDTO;
+import com.vic.entity.order.OrderDetail;
+import com.vic.entity.order.OrderMaster;
+import com.vic.enums.order.OrderStatusEnum;
+import com.vic.enums.order.PayStatusEnum;
+import com.vic.feign.product.ProductClient;
 import com.vic.orderserver.repository.OrderDetailRepository;
 import com.vic.orderserver.repository.OrderMasterRepository;
 import com.vic.orderserver.service.OrderService;
-import com.vic.orderserver.utils.KeyUtil;
-import com.vic.product.client.ProductClient;
+import com.vic.utils.KeyUtil;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
