@@ -6,7 +6,7 @@ spring:
       discovery:
         enabled: true
         service-id: CONFIG #config server id
-      profile: dev #env, according to applicationName and profile to search config file
+      profile: dev # 拉取远程配置，英文逗号分隔，格式为：应用名-profile.yml，如：user-dev.yml
 #by default, find CONFIG to http://localhost:8761/eureka/.
 #if changed, must specify
 eureka:
