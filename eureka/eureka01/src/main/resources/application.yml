@@ -1,15 +1,22 @@
 eureka:
+  instance:
+    hostname: localhost # eureka实例主机名
   client:
     service-url:
 #      defaultZone: http://localhost:8762/eureka/,http://localhost:8763/eureka/
-      defaultZone: http://localhost:8761/eureka/
-    #whether register self to eureka
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    # 表示是否将此实例信息注册到eureka server中以被发现。
+    # 如果是单个服务，应该设置为false，表示自己就是注册中心，不用注册自己。
+    # 在集群环境中，应该设置为true，表示注册自己（defaultZone不用填自己地址，填写其它eureka服务地址）
     register-with-eureka: false
+    # 表示是否此client从eureka server拉取eureka注册信息。
+    # 如果是单个服务，应该设置为false，表示自己就是注册中心，不用去注册中心获取其他服务的地址。
+    # 在集群环境中，应该设置为true，表示从eureka server中拉取其它服务信息。
+    fetch-registry: false
   server:
     #switch warning, it's recommend open in production environment
     enable-self-preservation: false
-#  instance:
-#    hostname: hostname-eureka01
+
 spring:
   application:
     name: eureka01 #define application name
