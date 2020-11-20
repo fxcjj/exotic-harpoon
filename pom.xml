@@ -17,7 +17,6 @@
         <module>order</module>
         <module>product</module>
         <module>user</module>
-        <module>user</module>
     </modules>
 
     <properties>

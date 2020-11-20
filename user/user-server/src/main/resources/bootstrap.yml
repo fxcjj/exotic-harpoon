@@ -3,9 +3,9 @@ spring:
     name: user
   cloud:
     config:
-      discover:
+      discovery:
         enabled: true
         service-id: CONFIG #config server id
-#      profile: dev # 拉取远程配置，英文逗号分隔，格式为：应用名-profile.yml，如：user-dev.yml
-  profiles:
-    active: ${config.active:dev}
+      profile: dev # 拉取远程配置，英文逗号分隔，格式为：应用名-profile.yml，如：user-dev.yml
+#  profiles:
+#    active: ${config.active:dev}

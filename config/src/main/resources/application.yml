@@ -16,11 +16,15 @@ spring:
         # 本地方式读取配置信息
 #        native:
 #          search-locations: classpath:/base/,classpath:/common/,classpath:/gate/,classpath:/module/
+  # 项目的环境配置
+#  profiles:
+#    active: dev
 # 将服务注册到eureka
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+# 端点管理
 management:
   endpoints:
     web:

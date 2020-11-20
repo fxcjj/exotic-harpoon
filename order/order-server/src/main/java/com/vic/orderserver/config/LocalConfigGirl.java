@@ -10,17 +10,17 @@ import javax.annotation.PostConstruct;
 @Slf4j
 @Data
 @Component
-@ConfigurationProperties("girl")
+@ConfigurationProperties("local.config.girl")
 //@RefreshScope
-public class GirlConfig {
+public class LocalConfigGirl {
     private String name;
     private Integer age;
 
     /**
-     * init GirlConfig: GirlConfig(name=lili, age=19)
+     * init LocalConfigGirl: LocalConfigGirl(name=justin, age=29)
      */
     @PostConstruct
     public void init() {
-        log.info("init GirlConfig: {}", this);
+        log.info("init LocalConfigGirl: {}", this);
     }
 }

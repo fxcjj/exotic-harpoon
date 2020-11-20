@@ -62,20 +62,22 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
+        <!--
+        加入这个依赖，浏览器访问 localhost:8090:/git/config 地址读取配置文件时，读取内容异常
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-        </dependency>
+        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
-        </dependency>
+        </dependency>-->
 
         <!--<dependency>
              <groupId>org.springframework.cloud</groupId>
