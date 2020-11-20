@@ -6,7 +6,7 @@ spring:
       discovery:
         enabled: true
         service-id: CONFIG #config server id
-      profile: dev #env, according to applicationName and profile to search config file
+      profile: dev #env, according to applicationName and profile to search config file, such as: order-dev.yml
   zipkin:
     base-url: http://192.168.6.131:9411
     enabled: true
@@ -32,9 +32,8 @@ spring:
 #            spring:
 #
 
-#by default, find CONFIG to http://localhost:8761/eureka/.
-#if changed, must specify
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
+# 这里不需要配置注册中心（eureka）地址，直接读取config下对应的配置文件
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
