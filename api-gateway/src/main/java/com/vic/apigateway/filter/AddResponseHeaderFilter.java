@@ -3,7 +3,6 @@ package com.vic.apigateway.filter;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
-import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -13,7 +12,7 @@ import static org.springframework.cloud.netflix.zuul.filters.support.FilterConst
 /**
  * 添加header
  */
-@Component
+//@Component
 public class AddResponseHeaderFilter extends ZuulFilter {
 
     @Override
