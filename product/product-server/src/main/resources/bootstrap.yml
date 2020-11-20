@@ -7,14 +7,3 @@ spring:
         enabled: true
         service-id: CONFIG #config server id
       profile: dev #env, according to applicationName and profile to search config file, such as: product-dev.yml
-  # zipkin链路追踪
-  zipkin:
-    base-url: http://192.168.6.131:9411
-    enabled: true
-  sleuth:
-    # 取样器
-    sampler:
-      probability: 1.0 # 取全部请求
-    web:
-      client:
-        enabled: true

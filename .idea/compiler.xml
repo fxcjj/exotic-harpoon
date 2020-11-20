@@ -7,22 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="client01" />
+        <module name="config" />
         <module name="comn-common" />
         <module name="eureka03" />
-        <module name="config" />
+        <module name="admin" />
+        <module name="client01" />
         <module name="comn-server" />
         <module name="eureka02" />
         <module name="order-server" />
         <module name="user-server" />
         <module name="product-server" />
-        <module name="eureka" />
         <module name="eureka01" />
         <module name="api-gateway" />
         <module name="common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="admin" target="1.8" />
       <module name="api-gateway" target="1.8" />
       <module name="client01" target="1.8" />
       <module name="comn" target="1.8" />
@@ -45,12 +46,13 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="api-gateway" options="-parameters" />
-      <module name="client01" options="-parameters" />
-      <module name="config" options="-parameters" />
-      <module name="eureka01" options="-parameters" />
-      <module name="eureka02" options="-parameters" />
-      <module name="eureka03" options="-parameters" />
+      <module name="admin" options="" />
+      <module name="api-gateway" options="" />
+      <module name="client01" options="" />
+      <module name="config" options="" />
+      <module name="eureka01" options="" />
+      <module name="eureka02" options="" />
+      <module name="eureka03" options="" />
       <module name="order-server" options="" />
       <module name="product-client" options="" />
       <module name="product-server" options="" />

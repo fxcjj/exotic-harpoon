@@ -1,6 +1,12 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: eureka01
 eureka:
   instance:
-    hostname: localhost # eureka实例主机名
+    # eureka实例主机名
+    hostname: localhost
   client:
     service-url:
 #      defaultZone: http://localhost:8762/eureka/,http://localhost:8763/eureka/
@@ -16,9 +22,3 @@ eureka:
   server:
     #switch warning, it's recommend open in production environment
     enable-self-preservation: false
-
-spring:
-  application:
-    name: eureka01 #define application name
-server:
-  port: 8761 #access port

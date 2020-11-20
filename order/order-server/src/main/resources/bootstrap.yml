@@ -7,29 +7,6 @@ spring:
         enabled: true
         service-id: CONFIG #config server id
       profile: dev #env, according to applicationName and profile to search config file, such as: order-dev.yml
-  zipkin:
-    base-url: http://192.168.6.131:9411
-    enabled: false # Enables sending spans to zipkin
-  sleuth:
-    sampler:
-      probability: 1.0
-    web:
-      client:
-        enabled: true
-#    stream:
-#      bindings:
-#        input: #binding target
-#          destination: queue.log.messages #消息交换机
-#          binder: local_rabbit
-#          group: order
-#        output:
-#          destination: queue.pretty.log.messages
-#          binder: local_rabbit
-#      binders:
-#        local_rabbit:
-#          type: rabbit
-#          environment:
-#            spring:
 # 测试读取本地配置
 local:
   config:

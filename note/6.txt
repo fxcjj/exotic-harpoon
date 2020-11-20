@@ -1,5 +1,11 @@
 
+1. admin
+admin 会自己拉取 Eureka 上注册的 app 信息，主动去注册。
+这也是唯一区别之前入门中手动注册的地方，就是 client 端不需要 admin-client 的依赖，
+也不需要配置 admin 地址了，一切全部由 admin-server 自己实现。
+这样的设计对环境变化很友好，不用改了admin-server后去改所有app 的配置了。
 
+2. config
 统一配置，即config模块。它也是一个服务，需要注册到eureka上
 
 新建时选择

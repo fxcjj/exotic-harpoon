@@ -21,6 +21,7 @@
         <option value="$PROJECT_DIR$/comn/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/user/user-server/pom.xml" />
+        <option value="$PROJECT_DIR$/admin/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
