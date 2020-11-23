@@ -10,7 +10,7 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 # \u7AEF\u70B9\u7BA1\u7406
 management:
-  endpoints:
+  endpoints.sen:
     web:
       exposure:
         # \u66B4\u9732\u6240\u6709\u7AEF\u70B9
