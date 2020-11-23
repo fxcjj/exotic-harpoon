@@ -3,15 +3,27 @@ server:
 spring:
   application:
     name: admin
+  # admin\u767B\u5F55
+  security:
+    user:
+      name: admin
+      password: 123456
 # \u5C06\u670D\u52A1\u6CE8\u518C\u5230eureka
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+  instance:
+    metadata-map:
+      user.name: ${spring.security.user.name}
+      user.password: ${spring.security.user.password}
 # \u7AEF\u70B9\u7BA1\u7406
 management:
-  endpoints.sen:
+  endpoints:
     web:
       exposure:
         # \u66B4\u9732\u6240\u6709\u7AEF\u70B9
         include: "*"
+  endpoint:
+    health:
+      show-details: always
