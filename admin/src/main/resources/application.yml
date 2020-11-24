@@ -3,27 +3,38 @@ server:
 spring:
   application:
     name: admin
-  # admin\u767B\u5F55
+  # admin登录
   security:
     user:
       name: admin
       password: 123456
-# \u5C06\u670D\u52A1\u6CE8\u518C\u5230eureka
+# 将服务注册到eureka
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+    # 指示轮询eureka服务器信息更改的频率(以秒为单位)。Eureka服务器可以添加或删除，这个设置控制了Eureka客户端何时应该知道它。
+    eurekaServiceUrlPollIntervalSeconds: 10
   instance:
+    # 该实例相关的元数据信息，会一同注册到eureka server，供其它实例使用
     metadata-map:
       user.name: ${spring.security.user.name}
       user.password: ${spring.security.user.password}
-# \u7AEF\u70B9\u7BA1\u7406
+    lease-renewal-interval-in-seconds: 8
+# 端点管理
 management:
   endpoints:
     web:
       exposure:
-        # \u66B4\u9732\u6240\u6709\u7AEF\u70B9
+        # 暴露所有端点
         include: "*"
   endpoint:
+    # health端点显示详细信息
     health:
       show-details: always
+# 日志配置
+logging:
+  # 日志输出级别
+  level:
+    # 不输出 Resolving eureka endpoints via configuration
+    com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: warn

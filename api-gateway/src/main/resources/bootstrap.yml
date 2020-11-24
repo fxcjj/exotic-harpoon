@@ -7,3 +7,13 @@ spring:
         enabled: true
         service-id: CONFIG
       profile: dev
+eureka:
+  client:
+    registry-fetch-interval-seconds: 5
+
+# 日志配置
+logging:
+  # 日志输出级别
+  level:
+    # 不输出 Resolving eureka endpoints via configuration
+    com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: warn

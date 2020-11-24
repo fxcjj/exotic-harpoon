@@ -9,6 +9,7 @@ spring:
       profile: dev # 拉取远程配置，英文逗号分隔，格式为：应用名-profile.yml，如：user-dev.yml
   profiles:
     active: ${config.active:dev}
+
 # 日志配置文件路径
 #logging.config: https://wenewrs-oss-data.oss-cn-shanghai-internal.aliyuncs.com/config/logback.xml
 # 默认日志打印级别（即ROOT）

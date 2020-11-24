@@ -30,3 +30,9 @@ management:
     web:
       exposure:
         include: "*" # 暴露所有端点
+# 日志配置
+logging:
+  # 日志输出级别
+  level:
+    # 不输出 Resolving eureka endpoints via configuration
+    com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: warn

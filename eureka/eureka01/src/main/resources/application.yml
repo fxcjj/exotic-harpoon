@@ -4,11 +4,18 @@ spring:
   application:
     name: eureka01
 eureka:
+  # eureka实例相关配置
   instance:
     # eureka实例主机名
     hostname: localhost
+    # 表示在eureka server在接收到上一个心跳之后等待下一个心跳的秒数（默认90秒），若不能在指定时间内收到心跳，则移除此实例，并禁止此实例的流量
+    # 必须高于 lease-renewal-interval-in-seconds
+    lease-expiration-duration-in-seconds: 10
+    # 表示 Eureka Client 向 Eureka Server 发送心跳的频率（默认 30 秒），如果在 lease-expiration-duration-in-seconds 指定的时间内未收到心跳，则移除该实例。
+    lease-renewal-interval-in-seconds: 5
   client:
     service-url:
+      # 集群环境中，其它的eureka节点
 #      defaultZone: http://localhost:8762/eureka/,http://localhost:8763/eureka/
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
     # 表示是否将此实例信息注册到eureka server中以被发现。
@@ -20,5 +27,7 @@ eureka:
     # 在集群环境中，应该设置为true，表示从eureka server中拉取其它服务信息。
     fetch-registry: false
   server:
-    #switch warning, it's recommend open in production environment
+    # 自我保护模式，默认打开（当出现网络分区导致丢失过多客户端时，不删除任何微服务）
     enable-self-preservation: false
+    # eureka server清理无效节点的时间间隔，默认60000毫秒，即60秒
+    eviction-interval-timer-in-ms: 10000

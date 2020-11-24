@@ -7,9 +7,3 @@ spring:
         enabled: true
         service-id: CONFIG #config server id
       profile: dev #env, according to applicationName and profile to search config file, such as: order-dev.yml
-# 测试读取本地配置
-local:
-  config:
-    girl:
-      name: justin
-      age: 29
