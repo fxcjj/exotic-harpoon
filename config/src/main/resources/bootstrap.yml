@@ -12,7 +12,8 @@ spring:
           uri: https://gitee.com/fxcjj/config-repo
           username: 643117227@qq.com
           password: myiv901225
-#          search-paths: /harpoon/base,/harpoon/common,/harpoon/gate,/harpoon/module
+          search-paths: config-2.0.0
+        #  search-paths: /harpoon/base,/harpoon/common,/harpoon/gate,/harpoon/module
         # 本地方式读取配置信息
 #        native:
 #          search-locations: classpath:/base/,classpath:/common/,classpath:/gate/,classpath:/module/
