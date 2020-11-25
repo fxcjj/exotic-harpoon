@@ -5,6 +5,8 @@ spring:
     name: config
   cloud:
     config:
+      # Flag to say that remote configuration is enabled. Default true;
+      enabled: true
       server:
         # git方式读取配置信息
         git:
@@ -13,14 +15,15 @@ spring:
           uri: https://gitee.com/fxcjj/config-repo
           username: 643117227@qq.com
           password: myiv901225
-          search-paths: config-2.0.0
-        #  search-paths: /harpoon/base,/harpoon/common,/harpoon/gate,/harpoon/module
-      # 配置仓库的分支
-      label: master
+          default-label: 2.0.1
+          search-paths: config-files
+#          search-paths: /harpoon/base,/harpoon/common,/harpoon/gate,/harpoon/module
+      # 配置仓库的分支，这里无效
+#      label: 2.0.1
         # 本地方式读取配置信息
 #        native:
 #          search-locations: classpath:/base/,classpath:/common/,classpath:/gate/,classpath:/module/
-  # 项目的环境配置
+  # 此项目的环境配置
 #  profiles:
 #    active: dev
 # 将服务注册到eureka

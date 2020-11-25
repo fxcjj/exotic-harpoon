@@ -3,12 +3,23 @@ spring:
     name: user
   cloud:
     config:
+      # 1. 当同时配置了spring.cloud.config.name和spring.application.name，使用spring.cloud.config.name
+      # 2. 当未配置spring.cloud.config.name，使用spring.application.name
+#      name: userb
       discovery:
         enabled: true
-        service-id: CONFIG #config server id
-      profile: dev # 拉取远程配置，英文逗号分隔，格式为：应用名-profile.yml，如：user-dev.yml
-  profiles:
-    active: ${config.active:dev}
+        # config server id
+        service-id: CONFIG
+      # The default profile to use when fetching remote configuration (comma-separated). Default is "default".
+      # 拉取远程配置文件，英文逗号分隔，格式为：应用名-profile.yml，如：user-dev.yml
+      # 1. 当同时配置了spring.cloud.config.profile和spring.profiles.active，使用spring.cloud.config.profile
+      # 2. 当未配置spring.cloud.config.profile，使用spring.profiles.active
+      profile: dev
+#  profiles:
+    # 1. 当配置此项时（dev/test/prod），日志会输出：The following profiles are active: dev/test/prod
+    # 2. 当未配置此项或配置为空（如：${config.active:}），默认为default,且不打印日志
+    # 3. 当配置为：dev, test, prod时，打印日志
+#    active: ${config.active:test}
 
 # 日志配置文件路径
 #logging.config: https://wenewrs-oss-data.oss-cn-shanghai-internal.aliyuncs.com/config/logback.xml
