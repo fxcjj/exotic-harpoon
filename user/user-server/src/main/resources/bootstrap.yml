@@ -14,12 +14,13 @@ spring:
       # 拉取远程配置文件，英文逗号分隔，格式为：应用名-profile.yml，如：user-dev.yml
       # 1. 当同时配置了spring.cloud.config.profile和spring.profiles.active，使用spring.cloud.config.profile
       # 2. 当未配置spring.cloud.config.profile，使用spring.profiles.active
-      profile: dev
-#  profiles:
-    # 1. 当配置此项时（dev/test/prod），日志会输出：The following profiles are active: dev/test/prod
+      # 3. 建议注释掉这个，使用spring.profiles.active，这样才会打印日志
+#      profile: dev
+  profiles:
+    # 1. 当配置此项时（dev/test/prod），日志才会输出：The following profiles are active: dev/test/prod，spring.cloud.config.profile 此项可以不用配置
     # 2. 当未配置此项或配置为空（如：${config.active:}），默认为default,且不打印日志
     # 3. 当配置为：dev, test, prod时，打印日志
-#    active: ${config.active:test}
+    active: ${config.active:dev}
 
 # 日志配置文件路径
 #logging.config: https://wenewrs-oss-data.oss-cn-shanghai-internal.aliyuncs.com/config/logback.xml
