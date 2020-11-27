@@ -4,8 +4,13 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9871822-f4b7-482b-93a5-b0c351b80af2" name="Default Changelist" comment="">
+    <list default="true" id="d9871822-f4b7-482b-93a5-b0c351b80af2" name="Default Changelist" comment="recommended to use spring.profiles.active">
+      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/admin/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/eureka01/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/eureka01/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order/order-server/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/user-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +140,7 @@
       <recent name="D:\github\exotic-harpoon\comn\comn-common\src\main\java\com\vic\vo\product" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigApplication">
+  <component name="RunManager" selected="Spring Boot.OrderServerApplication">
     <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="admin" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.vic.admin.AdminApplication" />
@@ -424,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606299230372</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="recommended to use spring.profiles.active">
+      <created>1606300066531</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1606300066531</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,7 +469,8 @@
     <MESSAGE value="add search-paths param for config server" />
     <MESSAGE value="rename eurekaServiceUrlPollIntervalSeconds for admin" />
     <MESSAGE value="test profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="test profile" />
+    <MESSAGE value="recommended to use spring.profiles.active" />
+    <option name="LAST_COMMIT_MESSAGE" value="recommended to use spring.profiles.active" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Project_Structure" timestamp="1605868056562">
@@ -468,66 +481,70 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605868125486" />
-    <state x="829" y="154" key="CommitChangelistDialog2" timestamp="1606299229455">
+    <state x="715" y="222" key="#xdebugger.evaluate" timestamp="1606385784658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="829" y="154" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606299229455" />
-    <state x="184" y="86" key="DiffContextDialog" timestamp="1606299195396">
+    <state x="715" y="222" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1606385784658" />
+    <state x="829" y="154" key="CommitChangelistDialog2" timestamp="1606301962511">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606299195396" />
+    <state x="829" y="154" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606301962511" />
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1606301961540">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606301961540" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606298553004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606298553004" />
-    <state width="1877" height="406" key="GridCell.Tab.0.bottom" timestamp="1606299971848">
+    <state width="1877" height="558" key="GridCell.Tab.0.bottom" timestamp="1606480953214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="406" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606299971848" />
-    <state width="1877" height="406" key="GridCell.Tab.0.center" timestamp="1606299971848">
+    <state width="1877" height="558" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606480953214" />
+    <state width="1877" height="558" key="GridCell.Tab.0.center" timestamp="1606480953214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="406" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606299971848" />
-    <state width="1877" height="406" key="GridCell.Tab.0.left" timestamp="1606299971848">
+    <state width="1877" height="558" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606480953214" />
+    <state width="1877" height="558" key="GridCell.Tab.0.left" timestamp="1606480953214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="406" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606299971848" />
-    <state width="1877" height="406" key="GridCell.Tab.0.right" timestamp="1606299971848">
+    <state width="1877" height="558" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606480953214" />
+    <state width="1877" height="558" key="GridCell.Tab.0.right" timestamp="1606480953214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="406" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606299971848" />
-    <state width="1877" height="406" key="GridCell.Tab.1.bottom" timestamp="1606299971772">
+    <state width="1877" height="558" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606480953214" />
+    <state width="1877" height="558" key="GridCell.Tab.1.bottom" timestamp="1606480953214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="406" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606299971772" />
-    <state width="1877" height="406" key="GridCell.Tab.1.center" timestamp="1606299971772">
+    <state width="1877" height="558" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606480953214" />
+    <state width="1877" height="558" key="GridCell.Tab.1.center" timestamp="1606480953214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="406" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606299971772" />
-    <state width="1877" height="406" key="GridCell.Tab.1.left" timestamp="1606299971772">
+    <state width="1877" height="558" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606480953214" />
+    <state width="1877" height="558" key="GridCell.Tab.1.left" timestamp="1606480953214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="406" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606299971772" />
-    <state width="1877" height="406" key="GridCell.Tab.1.right" timestamp="1606299971772">
+    <state width="1877" height="558" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606480953214" />
+    <state width="1877" height="558" key="GridCell.Tab.1.right" timestamp="1606480953214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="406" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606299971772" />
-    <state width="1877" height="406" key="GridCell.Tab.2.bottom" timestamp="1606299971772">
+    <state width="1877" height="558" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606480953214" />
+    <state width="1877" height="558" key="GridCell.Tab.2.bottom" timestamp="1606480953214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="406" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606299971772" />
-    <state width="1877" height="406" key="GridCell.Tab.2.center" timestamp="1606299971772">
+    <state width="1877" height="558" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606480953214" />
+    <state width="1877" height="558" key="GridCell.Tab.2.center" timestamp="1606480953214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="406" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606299971772" />
-    <state width="1877" height="406" key="GridCell.Tab.2.left" timestamp="1606299971772">
+    <state width="1877" height="558" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606480953214" />
+    <state width="1877" height="558" key="GridCell.Tab.2.left" timestamp="1606480953214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="406" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606299971772" />
-    <state width="1877" height="406" key="GridCell.Tab.2.right" timestamp="1606299971772">
+    <state width="1877" height="558" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606480953214" />
+    <state width="1877" height="558" key="GridCell.Tab.2.right" timestamp="1606480953214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="406" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606299971772" />
+    <state width="1877" height="558" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606480953214" />
     <state x="696" y="230" key="RollbackChangesDialog" timestamp="1605859831946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -536,22 +553,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606184968446" />
-    <state x="681" y="261" width="540" height="524" key="StructurePopup" timestamp="1606296232904">
+    <state x="681" y="261" width="582" height="524" key="StructurePopup" timestamp="1606383758727">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="681" y="261" width="540" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1606296232904" />
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1606299231460">
+    <state x="681" y="261" width="582" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1606383758727" />
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1606300067710">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606299231460" />
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606300067710" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605770133435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605770133435" />
-    <state x="634" y="248" width="786" height="600" key="find.popup" timestamp="1606267674519">
+    <state x="634" y="248" width="786" height="600" key="find.popup" timestamp="1606383711798">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="634" y="248" width="786" height="600" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606267674519" />
+    <state x="634" y="248" width="786" height="600" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606383711798" />
     <state x="330" y="345" key="new project wizard" timestamp="1605868046512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -560,37 +577,24 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606292268074" />
-    <state x="632" y="184" width="672" height="676" key="search.everywhere.popup" timestamp="1606267642091">
+    <state x="632" y="184" width="672" height="676" key="search.everywhere.popup" timestamp="1606479970712">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="632" y="184" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606267642091" />
+    <state x="632" y="184" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606479970712" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/stock/com/netflix/eureka/eureka-core/1.10.7/eureka-core-1.10.7-sources.jar!/com/netflix/eureka/registry/AbstractInstanceRegistry.java</url>
+          <line>1188</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>request.getHeader(&quot;User-Agent&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>request.getHeader(&quot;name&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>request.getHeaderNames()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>request.getCookies()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
   </component>
 </project>

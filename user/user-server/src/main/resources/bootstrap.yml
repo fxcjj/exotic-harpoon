@@ -17,7 +17,7 @@ spring:
       # 3. 建议注释掉这个，使用spring.profiles.active，这样才会打印日志
 #      profile: dev
   profiles:
-    # 1. 当配置此项时（dev/test/prod），日志才会输出：The following profiles are active: dev/test/prod，spring.cloud.config.profile 此项可以不用配置
+    # 1. 当配置此项时（dev/test/prod），日志才会输出（因为使用了logback日志）：The following profiles are active: dev/test/prod，spring.cloud.config.profile 此项可以不用配置
     # 2. 当未配置此项或配置为空（如：${config.active:}），默认为default,且不打印日志
     # 3. 当配置为：dev, test, prod时，打印日志
     active: ${config.active:dev}
