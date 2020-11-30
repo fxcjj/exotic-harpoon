@@ -81,6 +81,8 @@ eureka:
 2020-11-27 19:53:21.253  WARN 2536 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: ORDER - 192.168.141.78:order:8090
 2020-11-27 19:53:21.253  WARN 2536 --- [nio-8761-exec-6] c.n.eureka.resources.InstanceResource    : Not Found (Renew): ORDER - 192.168.141.78:order:8090
 
-
+Reference
+https://blog.csdn.net/akaks0/article/details/79512680
+https://www.jianshu.com/p/1a700a283107?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
 
 
