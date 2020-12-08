@@ -28,6 +28,7 @@ public class Client1Controller {
 //        String response = restTemplate.getForObject("http://localhost:8080/msg", String.class);
 
         //2. 第二种方式（使用LoadBalancerClient和RestTemplate获取url）
+        // 负载均衡选出一个服务实例
         ServiceInstance serviceInstance = loadBalancerClient.choose("PRODUCT");
         String url = String.format("http://%s:%s", serviceInstance.getHost(), serviceInstance.getPort()) + "/msg";
         RestTemplate restTemplate = new RestTemplate();
