@@ -18,7 +18,7 @@ spring:
           default-label: 2.0.1
           search-paths: config-files
 #          search-paths: /harpoon/base,/harpoon/common,/harpoon/gate,/harpoon/module
-      # 配置仓库的分支，这里无效
+      # 配置仓库的分支，这个参数配置无效，还是我用法不对？
 #      label: 2.0.1
         # 本地方式读取配置信息
 #        native:
@@ -36,7 +36,8 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*" # 暴露所有端点
+        # 暴露所有端点
+        include: "*"
 # 日志配置
 logging:
   # 日志输出级别
