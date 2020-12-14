@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9871822-f4b7-482b-93a5-b0c351b80af2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme-1.0.0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme-1.0.1.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,13 +33,18 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="v1.0.0" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/controller/ProductController.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/service/impl/OrderServiceImpl.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/controller/KissController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/controller/ProductController.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/controller/Client2Controller.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MavenImportPreferences">
@@ -73,6 +79,7 @@
     </entry>
   </component>
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -108,14 +115,61 @@
       <recent name="com.vic.enums" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\exotic-harpoon" />
       <recent name="D:\ideaprojectsa\exotic-harpoon\user\user-server\src\main" />
       <recent name="D:\ideaprojectsa\exotic-harpoon\user\user-server\src\main\java\com\vic" />
       <recent name="D:\ideaprojectsa\exotic-harpoon\note" />
       <recent name="D:\ideaprojectsa\exotic-harpoon\api-gateway" />
-      <recent name="D:\ideaprojectsa\exotic-harpoon\product\product-common\src\main\java\com\vic" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ProductServerApplication">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="client01" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="client01" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.vic.apigateway.ApiGatewayApplication" />
@@ -302,30 +356,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="adjust maven structure" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="425" y="113" key="CommitChangelistDialog2" timestamp="1589442210810">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1607917220876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="425" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589442210810" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1589438634998">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607917220876" />
+    <state x="606" y="254" key="VcsDiffUtil.ChangesDialog" timestamp="1607917218563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589438634998" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589442246258">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589442246258" />
-    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589442135186">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589442135186" />
-    <state x="636" y="253" width="647" height="534" key="find.popup" timestamp="1586337188689">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="636" y="253" width="647" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586337188689" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589440099478">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589440099478" />
+    <state x="606" y="254" key="VcsDiffUtil.ChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607917218563" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
