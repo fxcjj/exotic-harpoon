@@ -2,28 +2,24 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="config" />
-        <module name="comn-common" />
-        <module name="eureka03" />
-        <module name="admin" />
-        <module name="client01" />
-        <module name="comn-server" />
-        <module name="eureka02" />
-        <module name="order-server" />
-        <module name="user-server" />
         <module name="product-server" />
-        <module name="eureka01" />
+        <module name="user-server" />
+        <module name="comn-common" />
         <module name="api-gateway" />
-        <module name="common" />
+        <module name="config" />
+        <module name="eureka03" />
+        <module name="eureka02" />
+        <module name="eureka01" />
+        <module name="order-server" />
+        <module name="comn-server" />
+        <module name="client01" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8">
-      <module name="admin" target="1.8" />
+    <bytecodeTargetLevel>
       <module name="api-gateway" target="1.8" />
       <module name="client01" target="1.8" />
       <module name="comn" target="1.8" />
@@ -38,26 +34,9 @@
       <module name="order" target="1.8" />
       <module name="order-server" target="1.8" />
       <module name="product" target="1.8" />
-      <module name="product-client" target="1.8" />
       <module name="product-server" target="1.8" />
       <module name="user" target="1.8" />
       <module name="user-server" target="1.8" />
     </bytecodeTargetLevel>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="admin" options="" />
-      <module name="api-gateway" options="" />
-      <module name="client01" options="" />
-      <module name="config" options="" />
-      <module name="eureka01" options="" />
-      <module name="eureka02" options="" />
-      <module name="eureka03" options="" />
-      <module name="order-server" options="" />
-      <module name="product-client" options="" />
-      <module name="product-server" options="" />
-      <module name="user" options="" />
-      <module name="user-server" options="" />
-    </option>
   </component>
 </project>

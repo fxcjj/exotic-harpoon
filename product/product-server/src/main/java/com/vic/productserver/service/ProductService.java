@@ -7,7 +7,6 @@ import com.vic.entity.product.ProductInfo;
 import com.vic.enums.ResultEnum;
 import com.vic.enums.product.ProductStatusEnum;
 import com.vic.exception.ProductException;
-import com.vic.productserver.repository.ProductInfoRepository;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
