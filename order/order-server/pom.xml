@@ -23,11 +23,6 @@
 
         <dependency>
             <groupId>com.vic</groupId>
-            <artifactId>comn-common</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.vic</groupId>
             <artifactId>comn-server</artifactId>
         </dependency>
 

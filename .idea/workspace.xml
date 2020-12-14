@@ -4,11 +4,21 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9871822-f4b7-482b-93a5-b0c351b80af2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/readme-1.0.0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme-1.0.1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme-2.0.0.txt" afterDir="false" />
+    <list default="true" id="d9871822-f4b7-482b-93a5-b0c351b80af2" name="Default Changelist" comment="add readme-2.0.1.txt">
+      <change afterPath="$PROJECT_DIR$/comn/comn-server/src/main/java/com/vic/config/BusRefreshConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/order-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order/order-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/OrderServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/OrderServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/controller/Client2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/controller/Client2Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/controller/GitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/order-server/src/main/java/com/vic/orderserver/controller/BusRefreshController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/ProductServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-server/src/main/java/com/vic/productserver/ProductServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/UserServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/userserver/UserServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/userserver/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/userserver/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/repository/UserInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/userserver/repository/UserInfoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/user-server/src/main/java/com/vic/userserver/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +116,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575877540351" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/comn/comn-server/src/main/java/com/vic/config" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -120,24 +130,73 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.vic.userserver" />
+      <recent name="com.vic.userserver.controller" />
       <recent name="com.vic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.vic.orderserver.controller" />
       <recent name="com.vic.orderserver.config" />
       <recent name="com.vic.exception" />
       <recent name="com.vic.converter" />
       <recent name="com.vic.feign.product" />
-      <recent name="com.vic.component" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\exotic-harpoon\comn\comn-server\src\main\java\com\vic\config" />
       <recent name="D:\github\exotic-harpoon" />
       <recent name="D:\github\exotic-harpoon\user\user-server\src\main\resources" />
       <recent name="D:\github\exotic-harpoon\comn\comn-server" />
       <recent name="D:\github\exotic-harpoon\comn\comn-common" />
-      <recent name="D:\github\exotic-harpoon\comn" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Eureka01Application">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="client01" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="client01" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="admin" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.vic.admin.AdminApplication" />
@@ -205,11 +264,11 @@
       <module name="user-server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.vic.*" />
+          <option name="PATTERN" value="com.vic.userserver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.vic.UserServerApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.vic.userserver.UserServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -505,6 +564,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1605868056562" />
+    <state x="765" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1607933926406">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607933926406" />
+    <state x="724" y="378" width="471" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1607933956330">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="724" y="378" width="471" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1607933956330" />
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605868125486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

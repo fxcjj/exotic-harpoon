@@ -1,4 +1,4 @@
-package com.vic.repository;
+package com.vic.userserver.repository;
 
 
 import com.vic.entity.user.UserInfo;

@@ -1,4 +1,4 @@
-package com.vic.orderserver;
+package com.vic.userserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,10 +15,10 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableFeignClients(basePackages = {"com.vic.feign"})
 @EntityScan("com.vic")
 @ComponentScan(basePackages = {"com.vic.config"})
-public class OrderServerApplication {
+public class UserServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(OrderServerApplication.class, args);
+        SpringApplication.run(UserServerApplication.class, args);
     }
 
 }

@@ -1,10 +1,10 @@
-package com.vic.controller;
+package com.vic.userserver.controller;
 
 import com.vic.constants.CookieConstants;
 import com.vic.entity.user.UserInfo;
 import com.vic.enums.ResultEnum;
 import com.vic.enums.RoleEnum;
-import com.vic.service.UserService;
+import com.vic.userserver.service.UserService;
 import com.vic.utils.CookieUtils;
 import com.vic.vo.ResultVo;
 import org.springframework.beans.factory.annotation.Autowired;

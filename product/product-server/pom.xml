@@ -25,6 +25,11 @@
             <artifactId>comn-common</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.vic</groupId>
+            <artifactId>comn-server</artifactId>
+        </dependency>
+
         <!-- actuator -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

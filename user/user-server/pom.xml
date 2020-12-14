@@ -93,7 +93,7 @@
             <artifactId>spring-cloud-config-client</artifactId>
         </dependency>
 
-        <!-- 本身的spring cloud bus -->
+        <!-- 增加消息总线支持 本身的spring cloud bus -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bus-amqp</artifactId>

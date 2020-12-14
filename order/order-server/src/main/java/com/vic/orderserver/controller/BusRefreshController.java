@@ -1,9 +1,8 @@
 package com.vic.orderserver.controller;
 
-import com.vic.orderserver.config.GirlConfig;
+import com.vic.config.BusRefreshConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,16 +12,16 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @Slf4j
-@RequestMapping("git")
-@RefreshScope
-public class GitController {
+@RequestMapping("busRefresh")
+//@RefreshScope
+public class BusRefreshController {
 
     @Autowired
-    private GirlConfig girlConfig;
+    private BusRefreshConfig config;
 
     @GetMapping("config")
-    public GirlConfig config() {
-        return girlConfig;
+    public BusRefreshConfig config() {
+        return config;
     }
 
 }
