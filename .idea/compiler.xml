@@ -2,33 +2,34 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="api-gateway" />
         <module name="client01" />
-        <module name="config" />
-        <module name="eureka" />
-        <module name="eureka01" />
-        <module name="eureka02" />
         <module name="eureka03" />
         <module name="order-client" />
-        <module name="order-common" />
-        <module name="order-server" />
-        <module name="product-client" />
         <module name="product-common" />
-        <module name="product-server" />
         <module name="user-client" />
+        <module name="config" />
+        <module name="product-client" />
+        <module name="eureka02" />
         <module name="user-common" />
+        <module name="order-server" />
         <module name="user-server" />
+        <module name="product-server" />
+        <module name="eureka" />
+        <module name="eureka01" />
+        <module name="api-gateway" />
+        <module name="order-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api-gateway" target="1.8" />
       <module name="client01" target="1.8" />
       <module name="config" target="1.8" />
-      <module name="eureka" target="1.5" />
+      <module name="eureka" target="1.8" />
       <module name="eureka01" target="1.8" />
       <module name="eureka02" target="1.8" />
       <module name="eureka03" target="1.8" />
@@ -54,15 +55,15 @@
       <module name="eureka01" options="-parameters" />
       <module name="eureka02" options="-parameters" />
       <module name="eureka03" options="-parameters" />
-      <module name="order-client" options="-parameters" />
-      <module name="order-common" options="-parameters" />
-      <module name="order-server" options="-parameters" />
-      <module name="product-client" options="-parameters" />
-      <module name="product-common" options="-parameters" />
-      <module name="product-server" options="-parameters" />
-      <module name="user-client" options="-parameters" />
-      <module name="user-common" options="-parameters" />
-      <module name="user-server" options="-parameters" />
+      <module name="order-client" options="" />
+      <module name="order-common" options="" />
+      <module name="order-server" options="" />
+      <module name="product-client" options="" />
+      <module name="product-common" options="" />
+      <module name="product-server" options="" />
+      <module name="user-client" options="" />
+      <module name="user-common" options="" />
+      <module name="user-server" options="" />
     </option>
   </component>
 </project>
