@@ -20,3 +20,6 @@ eureka:
     # 告知服务端N秒还未收到心跳的话，就将该服务移除列表
     # eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，在这个时间内若没收到下一次心跳，则将移除该instance
     lease-expiration-duration-in-seconds: 90
+#logging:
+#  level:
+#    org: trace

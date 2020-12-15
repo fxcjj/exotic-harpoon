@@ -77,10 +77,22 @@
             <artifactId>spring-cloud-config-client</artifactId>
         </dependency>
 
+        <!-- 添加消息总线支持 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
+
         <!-- 使用amqp -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+
+        <!-- spring cloud stream -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
         </dependency>
 
         <!-- 此依赖包含了starter-sleuth和sleuth-zipkin -->

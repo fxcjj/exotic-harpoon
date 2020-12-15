@@ -1,6 +1,7 @@
 package com.vic.productserver.service;
 
 import com.vic.entity.product.ProductCategory;
+import com.vic.productserver.repository.ProductCategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -21,7 +21,9 @@ public class BusRefreshController {
 
     @GetMapping("config")
     public BusRefreshConfig config() {
-        return config;
+        BusRefreshConfig c = new BusRefreshConfig();
+        c.setName(config.getName());
+        return c;
     }
 
 }

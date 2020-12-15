@@ -14,7 +14,7 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableDiscoveryClient
 @EnableFeignClients(basePackages = {"com.vic.feign"})
 @EntityScan("com.vic")
-@ComponentScan(basePackages = {"com.vic.config"})
+@ComponentScan(basePackages = {"com.vic"})
 public class OrderServerApplication {
 
     public static void main(String[] args) {
