@@ -23,13 +23,37 @@ order,product,user为微服务
 api-gateway网关
 
 4 相关技术点
-非继承方式引入spring boot,spring cloud依赖
-HystrixCommand熔断
-Feign接口调用
-引入AMQP，默认实现为rabbitmq
-Zuul网关配置
-引入Zipkin
-校验重复提交
-调整项目结构（exotic-harpoon/pom.xml包括所有依赖）
-配置中心读取git
+4.1 非继承方式引入spring boot,spring cloud依赖
+4.2 HystrixCommand熔断
+4.3 Feign接口调用
+4.4 引入AMQP，默认实现为rabbitmq
+4.5 Zuul网关配置
+4.6 引入Zipkin
+4.7 校验重复提交
+4.8 调整项目结构（exotic-harpoon/pom.xml包括所有依赖）
+4.9 配置中心读取git
+在config模块pom.xml中引入依赖
+<!-- 添加消息总线支持 Spring Cloud Bus -->
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
 
+在各微服务pom.xml中引入依赖
+<!-- 添加消息总线支持 Spring Cloud Bus -->
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+
+
+Reference
+https://blog.csdn.net/ThinkWon/article/details/103786588

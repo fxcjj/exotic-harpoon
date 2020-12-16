@@ -7,6 +7,13 @@ spring:
         enabled: true
         service-id: CONFIG #config server id
       profile: dev # 详细说明参考user/bootstrap.yml
+  # 消息队列
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
 eureka:
   client:
     # 开启健康检查
