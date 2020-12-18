@@ -476,6 +476,7 @@ g) 在SBA中调整日志级别
 例如：查询SQL输出
 在“日志配置”菜单中，搜索 org.hibernate.SQL，设置日志级别为DEBUG。
 观察日志即可看到sql输出
+测试方法在 com.vic.userserver.controller.TestController.queryUserById
 
 8 Zuul网关配置
 为api-gateway添加lb-api-gateway，所有请求通过lb-api-gateway请求转发
