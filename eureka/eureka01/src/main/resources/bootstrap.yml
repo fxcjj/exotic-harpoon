@@ -17,8 +17,8 @@ eureka:
   client:
     service-url:
       # 集群环境中，其它的eureka节点
-      defaultZone: http://localhost:8762/eureka/,http://localhost:8763/eureka/
-#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#      defaultZone: http://localhost:8762/eureka/,http://localhost:8763/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
     # 指示此实例是否应将其信息注册到eureka服务器以供其他人发现
     # 如果是单个节点，应该设置为false，表示自己就是注册中心，不用注册自己。
     # 在集群环境中，应该设置为true，表示注册自己（defaultZone不用填自己地址，填写其它eureka服务地址）

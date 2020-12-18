@@ -472,6 +472,11 @@ com.vic.admin.config.SecuritySecureConfig
 输入地址: http://localhost:8097
 输入用户名/密码: admin/123456
 
+g) 在SBA中调整日志级别
+例如：查询SQL输出
+在“日志配置”菜单中，搜索 org.hibernate.SQL，设置日志级别为DEBUG。
+观察日志即可看到sql输出
+
 8 Zuul网关配置
 为api-gateway添加lb-api-gateway，所有请求通过lb-api-gateway请求转发
 
