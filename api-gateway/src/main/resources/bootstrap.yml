@@ -6,14 +6,37 @@ spring:
       discovery:
         enabled: true
         service-id: CONFIG
-      profile: dev
+#      profile: dev
+  profiles:
+    active: ${config.active:dev}
 eureka:
   client:
     registry-fetch-interval-seconds: 5
-
 # 日志配置
 logging:
-  # 日志输出级别
+  # 日志配置文件路径
+  #  config: https://wenewrs-oss-data.oss-cn-shanghai-internal.aliyuncs.com/config/logback.xml
+  # 日志级别配置
   level:
+    # 默认日志打印级别，即ROOT
+    ROOT: INFO
+    # 指定名名所使用的日志级别
+    org.springframework: INFO
+    org.springframework.cloud.sleuth: INFO
+    springfox: WARN
+    com.netflix: WARN
+    com.vic: INFO
+    com.vic.repository: INFO
     # 不输出 Resolving eureka endpoints via configuration
     com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: warn
+    # 调试使用
+  #    org: trace
+  file:
+    path: /Users/admin/logs/backup
+    name: /Users/admin/logs/exotic-harpoon/${spring.application.name}.log
+  # 日志模块
+  pattern:
+    # 控制台的日志模式
+    console: '%d{yyyy-MM-dd HH:mm:ss} - [${spring.application.name:},%X{X-B3-TraceId:-},%X{X-B3-SpanId:-},%X{X-Span-Export:-}] - %msg%n'
+    # 日志记录模式文件
+    file: '%d{yyyy-MM-dd HH:mm:ss} [%thread] - [${spring.application.name:},%X{X-B3-TraceId:-},%X{X-B3-SpanId:-},%X{X-Span-Export:-}] - %-5level %logger{36} - %msg%n'

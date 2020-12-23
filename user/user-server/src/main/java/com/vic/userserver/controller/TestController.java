@@ -25,6 +25,11 @@ public class TestController {
     @Autowired
     UserService userService;
 
+    @GetMapping("a")
+    public String a() {
+        return "ok";
+    }
+
     @RequestMapping("test1")
     public String test1() {
         for(int i = 0; i < 100; i++) {

@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * filter配置
  */
-@Configuration
+//@Configuration
 public class FilterConfig {
 
     @Bean

@@ -1,5 +1,6 @@
 package com.vic.orderserver.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.vic.bo.product.DecreaseStockInput;
 import com.vic.bo.product.ProductInfoOutput;
 import com.vic.config.BusRefreshConfig;
@@ -22,15 +23,15 @@ public class Client2Controller {
     @Autowired
     ProductClient productClient;
 
-    @GetMapping("/getProductList")
+    @GetMapping("getProductList")
     public String getProductList() {
+        log.info("invoke getProductList method start");
         List<ProductInfoOutput> productInfos = productClient.listForOrder(Arrays.asList("164103465734242707"));
-        log.info("response: {}", productInfos);
-
+        log.info("invoke getProductList method end, result:{}", JSON.toJSONString(productInfos));
         return "ok";
     }
 
-    @GetMapping("/decreaseStock")
+    @GetMapping("decreaseStock")
     public String decreaseStock() {
 
         productClient.decreaseStock(Arrays.asList(new DecreaseStockInput("164103465734242707", 2)));

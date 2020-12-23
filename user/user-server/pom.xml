@@ -112,10 +112,10 @@
         </dependency>-->
 
         <!-- 包含了starter-sleuth和sleuth-zipkin -->
-        <!--<dependency>
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zipkin</artifactId>
-        </dependency>-->
+        </dependency>
 
         <dependency>
             <groupId>com.alibaba</groupId>

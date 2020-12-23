@@ -1,31 +1,3 @@
-8
-
-服务网关的要素
-1. 稳定性、高可用
-2. 性能、并发性
-3. 安全性
-4. 扩展性
-
-常用的网关方案
-1. Nginx+Lua
-性能和稳定性不错
-2. Kong
-要花钱的
-3. Tyk
-轻量级，go语言
-4. Spring Cloud Zuul
-
-Zuul特点
-1. 路由+过滤器=zuul
-2. 一系列过滤器
-
-
-过滤器
-	pre filters
-	routing filter(s)
-	post filter(s) //已经拿到结果，可以对结果的处理或加工
-	error filter //上面三个发生异常时走过个
-	custom filter //自定义filter，可以放在prefilter和postfilter
 
 配置
 zuul:
@@ -53,25 +25,15 @@ management:
 		enabled: false
 
 
-ZuulConfig
+ZuulConfig.java
 	@ConfigurationProperties("zuul")
-	@RefreshScope
 	public ZuulProperties zuulProperties() {
 		new ZuulProperties();
 	}
 或者放在启动类上
 
-前置Pre可以做：
-	* 限流
-	* 鉴权
-	* 参数检验
-后置Post可以做：
-	* 统计
-	* 日志
 
-Zuul的高可用
-	* 多个Zuul节点注册到Eureka Server
-	* Nginx和Zuul混搭
+
 
 全局敏感头
 zuul:

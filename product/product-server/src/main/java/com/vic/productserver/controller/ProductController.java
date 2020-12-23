@@ -1,5 +1,6 @@
 package com.vic.productserver.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.vic.bo.product.DecreaseStockInput;
 import com.vic.entity.product.ProductCategory;
 import com.vic.entity.product.ProductInfo;
@@ -8,6 +9,7 @@ import com.vic.productserver.service.ProductService;
 import com.vic.vo.ResultVo;
 import com.vic.vo.product.ProductInfoVo;
 import com.vic.vo.product.ProductVo;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -17,6 +19,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * @author victor
+ */
+@Slf4j
 @RestController
 @RequestMapping("product")
 public class ProductController {
@@ -82,7 +88,15 @@ public class ProductController {
      */
     @PostMapping("listForOrder")
     public List<ProductInfo> listForOrder(@RequestBody List<String> productIdList) {
-        return productService.findList(productIdList);
+        log.info("invoke listForOrder method start");
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        List<ProductInfo> list = productService.findList(productIdList);
+        log.info("invoke listForOrder method result:{}", JSON.toJSONString(list));
+        return list;
     }
 
 

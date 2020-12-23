@@ -10,14 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
  * 1. 第一种服务之间通信方式RestTemplate, @LoadBalanced
  */
 @RestController
-@RequestMapping("/env")
+@RequestMapping("env")
 @RefreshScope
 public class EnvController {
 
     @Value("${env}")
     private String env;
 
-    @GetMapping("/print")
+    @GetMapping("print")
     public String print() {
         return env;
     }

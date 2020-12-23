@@ -5,7 +5,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.netflix.zuul.filters.ZuulProperties;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class ZuulConfig {
 
     /**
