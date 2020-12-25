@@ -27,12 +27,15 @@ eureka:
       enabled: true
     # 设置实例是否注册到eureka server，默认为true
     register-with-eureka: true
+    # Indicates how often(in seconds) to fetch the registry information from the eureka server
+    registry-fetch-interval-seconds: 5
   instance:
     # eureka client发送心跳给server端的频率。如果在leaseExpirationDurationInSeconds后，server端没有收到client的心跳，则将摘除该instance
     lease-renewal-interval-in-seconds: 30
     # 告知服务端N秒还未收到心跳的话，就将该服务移除列表
     # eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，在这个时间内若没收到下一次心跳，则将移除该instance
     lease-expiration-duration-in-seconds: 90
+
 # 日志配置
 logging:
   # 日志配置文件路径
