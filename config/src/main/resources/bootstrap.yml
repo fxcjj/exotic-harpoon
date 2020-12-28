@@ -1,5 +1,5 @@
 server:
-  port: 8091
+  port: 18020
 spring:
   application:
     name: config
@@ -15,22 +15,36 @@ spring:
           uri: https://gitee.com/fxcjj/config-repo
           username: 643117227@qq.com
           password: myiv901225
-          default-label: 2.0.1
-          search-paths: config-files
-#          search-paths: /harpoon/base,/harpoon/common,/harpoon/gate,/harpoon/module
-      # 配置仓库的分支，这个参数配置无效，还是我用法不对？
-#      label: 2.0.1
+          default-label: 2.0.2
+          search-paths: /base,/common,/gate,/module
+
         # 本地方式读取配置信息
 #        native:
 #          search-locations: classpath:/base/,classpath:/common/,classpath:/gate/,classpath:/module/
-  # 此项目的环境配置
-#  profiles:
-#    active: dev
+
+  # 此项目的环境配置，native,dev,test/uat,prod
+  profiles:
+    active: ${config.active:dev}
+
 # 将服务注册到eureka
 eureka:
   client:
+    # 开启健康检查
+    healthcheck:
+      enabled: true
+    # Indicates how often(in seconds) to fetch the registry information from the eureka server
+    registry-fetch-interval-seconds: 5
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://${eureka.host:127.0.0.1}:${eureka.port:18010}/eureka
+  instance:
+    #
+    prefer-ip-address: true
+    # eureka client发送心跳给server端的频率。如果在leaseExpirationDurationInSeconds后，server端没有收到client的心跳，则将摘除该instance
+    lease-renewal-interval-in-seconds: 3
+    # 告知服务端N秒还未收到心跳的话，就将该服务移除列表
+    # eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，在这个时间内若没收到下一次心跳，则将移除该instance
+    lease-expiration-duration-in-seconds: 10
+
 # 端点管理
 management:
   endpoints:
@@ -38,9 +52,36 @@ management:
       exposure:
         # 暴露所有端点
         include: "*"
+  endpoint:
+    health:
+      # 显示健康具体信息，默认不会显示详细信息
+      show-details: always
+
 # 日志配置
 logging:
-  # 日志输出级别
+  # 日志配置文件路径
+  #  config: https://wenewrs-oss-data.oss-cn-shanghai-internal.aliyuncs.com/config/logback.xml
+  # 日志级别配置
   level:
+    # 默认日志打印级别，即ROOT
+    ROOT: INFO
+    # 指定名名所使用的日志级别
+    org.springframework: INFO
+    org.springframework.cloud.sleuth: INFO
+    springfox: WARN
+    com.netflix: WARN
+    com.vic: INFO
+    com.vic.repository: INFO
     # 不输出 Resolving eureka endpoints via configuration
     com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: warn
+    # 调试使用
+  #    org: trace
+  file:
+    path: /Users/admin/logs/backup
+    name: /Users/admin/logs/exotic-harpoon/${spring.application.name}.log
+  # 日志模块
+  pattern:
+    # 控制台的日志模式
+    console: '%d{yyyy-MM-dd HH:mm:ss} - [${spring.application.name:},%X{X-B3-TraceId:-},%X{X-B3-SpanId:-},%X{X-Span-Export:-}] - %msg%n'
+    # 日志记录模式文件
+    file: '%d{yyyy-MM-dd HH:mm:ss} [%thread] - [${spring.application.name:},%X{X-B3-TraceId:-},%X{X-B3-SpanId:-},%X{X-Span-Export:-}] - %-5level %logger{36} - %msg%n'

@@ -1,44 +1,50 @@
 server:
-  port: 8097
+  port: 18040
 spring:
   application:
     name: admin
-  # admin登录
-  security:
-    user:
-      name: admin
-      password: 123456
-# 将服务注册到eureka
-eureka:
-  client:
-    # 健康检查
-    healthcheck: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-    # 指示轮询eureka服务器信息更改的频率(以秒为单位)。Eureka服务器可以添加或删除，这个设置控制了Eureka客户端何时应该知道它。
-    # 也可以使用变量名 eurekaServiceUrlPollIntervalSeconds
-    eureka-service-url-poll-interval-seconds: 5
-  instance:
-    # 该实例相关的元数据信息，会一同注册到eureka server，供其它实例使用
-    metadata-map:
-      user.name: ${spring.security.user.name}
-      user.password: ${spring.security.user.password}
-    # # 表示 Eureka Client 向 Eureka Server 发送心跳的频率（默认 30 秒），如果在 lease-expiration-duration-in-seconds 指定的时间内未收到心跳，则移除该实例。
-    lease-renewal-interval-in-seconds: 20
-# 端点管理
-management:
-  endpoints:
-    web:
-      exposure:
-        # 暴露所有端点
-        include: "*"
-  endpoint:
-    # health端点显示详细信息
-    health:
-      show-details: always
+  cloud:
+    config:
+      # 读取配置文件
+      name: common-config,admin
+      # 通过链接地址访问配置中心
+      uri: http://${config.host:127.0.0.1}:${config.port:18020}
+      # 通过注册中心访问配置中心
+  #      discovery:
+  #        enabled: true
+  #        service-id: CONFIG #config server id
+  #      profile: dev # 详细说明参考user/bootstrap.yml
+  profiles:
+    # 1. 当配置此项时（dev/test/prod），日志才会输出（因为使用了logback日志）：The following profiles are active: dev/test/prod，spring.cloud.config.profile 此项可以不用配置
+    # 2. 当未配置此项或配置为空（如：${config.active:}），默认为default,且不打印日志
+    # 3. 当配置为：dev, test, prod时，打印日志
+    active: ${config.active:dev}
+
 # 日志配置
 logging:
-  # 日志输出级别
+  # 日志配置文件路径
+  #  config: https://wenewrs-oss-data.oss-cn-shanghai-internal.aliyuncs.com/config/logback.xml
+  # 日志级别配置
   level:
+    # 默认日志打印级别，即ROOT
+    ROOT: INFO
+    # 指定名名所使用的日志级别
+    org.springframework: INFO
+    org.springframework.cloud.sleuth: INFO
+    springfox: WARN
+    com.netflix: WARN
+    com.vic: INFO
+    com.vic.repository: INFO
     # 不输出 Resolving eureka endpoints via configuration
     com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: warn
+    # 调试使用
+  #    org: trace
+  file:
+    path: /Users/admin/logs/backup
+    name: /Users/admin/logs/exotic-harpoon/${spring.application.name}.log
+  # 日志模块
+  pattern:
+    # 控制台的日志模式
+    console: '%d{yyyy-MM-dd HH:mm:ss} - [${spring.application.name:},%X{X-B3-TraceId:-},%X{X-B3-SpanId:-},%X{X-Span-Export:-}] - %msg%n'
+    # 日志记录模式文件
+    file: '%d{yyyy-MM-dd HH:mm:ss} [%thread] - [${spring.application.name:},%X{X-B3-TraceId:-},%X{X-B3-SpanId:-},%X{X-Span-Export:-}] - %-5level %logger{36} - %msg%n'

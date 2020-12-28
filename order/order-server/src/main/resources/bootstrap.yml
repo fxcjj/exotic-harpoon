@@ -1,40 +1,26 @@
+server:
+  port: 18050
 spring:
   application:
     name: order
   cloud:
     config:
-      discovery:
-        enabled: true
-        service-id: CONFIG #config server id
+      # 读取配置文件
+      name: common-config,db-config,zipkin-config,caches-config,order
+      # 通过链接地址访问配置中心
+      uri: http://${config.host:127.0.0.1}:${config.port:18020}
+      # 指定分支
+#      label: 2.0.2
+         # 通过注册中心访问配置中心
+  #      discovery:
+#        enabled: true
+#        service-id: CONFIG #config server id
 #      profile: dev # 详细说明参考user/bootstrap.yml
   profiles:
     # 1. 当配置此项时（dev/test/prod），日志才会输出（因为使用了logback日志）：The following profiles are active: dev/test/prod，spring.cloud.config.profile 此项可以不用配置
     # 2. 当未配置此项或配置为空（如：${config.active:}），默认为default,且不打印日志
     # 3. 当配置为：dev, test, prod时，打印日志
     active: ${config.active:dev}
-
-  # 消息队列
-  rabbitmq:
-    host: 127.0.0.1
-    port: 5672
-    username: guest
-    password: guest
-    virtual-host: /
-eureka:
-  client:
-    # 开启健康检查
-    healthcheck:
-      enabled: true
-    # 设置实例是否注册到eureka server，默认为true
-    register-with-eureka: true
-    # Indicates how often(in seconds) to fetch the registry information from the eureka server
-    registry-fetch-interval-seconds: 5
-  instance:
-    # eureka client发送心跳给server端的频率。如果在leaseExpirationDurationInSeconds后，server端没有收到client的心跳，则将摘除该instance
-    lease-renewal-interval-in-seconds: 30
-    # 告知服务端N秒还未收到心跳的话，就将该服务移除列表
-    # eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，在这个时间内若没收到下一次心跳，则将移除该instance
-    lease-expiration-duration-in-seconds: 90
 
 # 日志配置
 logging:
