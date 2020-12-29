@@ -3,11 +3,12 @@ package com.vic.admin.config;
 import de.codecentric.boot.admin.server.config.AdminServerProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 
-@Configuration
+@EnableWebSecurity
 public class SecuritySecureConfig extends WebSecurityConfigurerAdapter {
 
     private final String adminContextPath;
@@ -18,29 +19,28 @@ public class SecuritySecureConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        // 登录成功处理类
         SavedRequestAwareAuthenticationSuccessHandler successHandler = new SavedRequestAwareAuthenticationSuccessHandler();
         successHandler.setTargetUrlParameter("redirectTo");
         successHandler.setDefaultTargetUrl(adminContextPath + "/");
 
         http.authorizeRequests()
-                //授予对所有静态资产和登录页面的公共访问权限。
+                //1.配置所有静态资源和登录页可以公开访问
                 .antMatchers(adminContextPath + "/assets/**").permitAll()
-                //登录页面允许访问
                 .antMatchers(adminContextPath + "/login").permitAll()
-                //其他所有请求需要登录
                 .anyRequest().authenticated()
                 .and()
-                //登录页面配置，用于替换security默认页面
+                //2.配置登录和登出路径
                 .formLogin().loginPage(adminContextPath + "/login").successHandler(successHandler).and()
-                //登出页面配置，用于替换security默认页面
                 .logout().logoutUrl(adminContextPath + "/logout").and()
+                //3.开启http basic支持，admin-client注册时需要使用
                 .httpBasic().and()
                 .csrf()
+                //4.开启基于cookie的csrf保护
                 .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
+                //5.忽略这些路径的csrf保护以便admin-client注册
                 .ignoringAntMatchers(
-                        "/instances",
-                        "/actuator/**"
+                        adminContextPath + "/instances",
+                        adminContextPath + "/actuator/**"
                 );
     }
 }

@@ -17,7 +17,7 @@ spring:
           password: myiv901225
           default-label: 2.0.2
           search-paths: /base,/common,/gate,/module
-
+#          clone-on-start: true
         # 本地方式读取配置信息
 #        native:
 #          search-locations: classpath:/base/,classpath:/common/,classpath:/gate/,classpath:/module/

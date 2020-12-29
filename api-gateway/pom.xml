@@ -29,6 +29,7 @@
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>-->
 
+        <!-- 此项目为config client，即通过config server获取项目配置文件 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-client</artifactId>
@@ -48,11 +49,11 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
-        </dependency>
+        </dependency>-->
 
         <!-- 添加消息总线支持 Spring Cloud Bus -->
         <dependency>

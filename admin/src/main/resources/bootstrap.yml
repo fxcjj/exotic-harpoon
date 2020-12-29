@@ -35,8 +35,6 @@ logging:
     com.netflix: WARN
     com.vic: INFO
     com.vic.repository: INFO
-    # 不输出 Resolving eureka endpoints via configuration
-    com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: warn
     # 调试使用
   #    org: trace
   file:
