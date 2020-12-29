@@ -7,24 +7,29 @@ spring:
     config:
       # Flag to say that remote configuration is enabled. Default true;
       enabled: true
+
+      # 配置方式
       server:
-        # git方式读取配置信息
-        git:
-#          basedir: D:\ideaprojectsa\git-config\basedir
-          # 配置git仓库地址
-          uri: https://gitee.com/fxcjj/config-repo
-          username: 643117227@qq.com
-          password: myiv901225
-          default-label: 2.0.2
-          search-paths: /base,/common,/gate,/module
+        bootstrap: true
+
+        # 方式一: git方式读取配置信息
+#        git:
+##          basedir: D:\ideaprojectsa\git-config\basedir
+#          # 配置git仓库地址
+#          uri: https://gitee.com/fxcjj/config-repo
+#          username: 643117227@qq.com
+#          password: myiv901225
+#          default-label: 2.0.2
+#          search-paths: /base,/common,/gate,/module
 #          clone-on-start: true
-        # 本地方式读取配置信息
-#        native:
-#          search-locations: classpath:/base/,classpath:/common/,classpath:/gate/,classpath:/module/
+
+        # 方式二: 本地方式读取配置信息
+        native:
+          search-locations: classpath:/base/,classpath:/common/,classpath:/gate/,classpath:/module/
 
   # 此项目的环境配置，native,dev,test/uat,prod
   profiles:
-    active: ${config.active:dev}
+    active: ${config.active:native}
 
 # 将服务注册到eureka
 eureka:
@@ -37,7 +42,7 @@ eureka:
     service-url:
       defaultZone: http://${eureka.host:127.0.0.1}:${eureka.port:18010}/eureka
   instance:
-    #
+    # 启用ip配置 这样在注册中心列表中看见的是以ip+端口呈现的
     prefer-ip-address: true
     # eureka client发送心跳给server端的频率。如果在leaseExpirationDurationInSeconds后，server端没有收到client的心跳，则将摘除该instance
     lease-renewal-interval-in-seconds: 3

@@ -25,17 +25,12 @@ public class TestController {
     @Autowired
     UserService userService;
 
-    @GetMapping("a")
-    public String a() {
-        return "ok";
-    }
-
-    @RequestMapping("test1")
+    @GetMapping("haha")
     public String test1() {
-        for(int i = 0; i < 100; i++) {
+        for(int i = 0; i < 10; i++) {
             log.info("print log {}", i);
         }
-        return "ok" + haha;
+        return haha;
     }
 
     @GetMapping("queryUserById")

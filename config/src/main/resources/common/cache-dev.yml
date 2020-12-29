@@ -1,0 +1,32 @@
+# redis switch
+redis:
+  enabled: true
+
+# redis配置
+spring:
+  redis:
+    # redis服务器地址
+    host: r-uf63qvrxbx4ep1h8ukpd.redis.rds.aliyuncs.com
+    # redis访问端口
+    port: 6379
+    # 数据库索引，默认为0
+    database: 4
+    # redis服务器连接密码
+    password: FwVYdUqA8f9XAHFBx0EI4j
+    # 连接超时时间（毫秒）
+    timeout: 10000ms
+    # lettuce客户端配置
+    lettuce:
+      pool:
+        # 连接池中可分配的最大连接数
+        # Maximum number of connections that can be allocated by the pool at a given
+        # time. Use a negative value for no limit.
+        max-active: 20
+        # 连接池中分配连接时的最大阻塞时间，使用负数无限阻塞
+        # Maximum amount of time a connection allocation should block before throwing an
+        # exception when the pool is exhausted. Use a negative value to block indefinitely.
+        max-wait: -1ms
+        # 连接池中最大空闲连接，默认8
+        max-idle: 8
+        # 连接池中最小空闲连接，默认0
+        min-idle: 5
