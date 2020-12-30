@@ -3,6 +3,11 @@
 #swagger2:
 #  enable: true
 
+# Health Indicator
+# The Config Client supplies a Spring Boot Health Indicator that attempts to load configuration from the Config Server.
+# The health indicator can be disabled by setting health.config.enabled=false. The response is also cached for performance reasons.
+# The default cache time to live is 5 minutes. To change that value, set the health.config.time-to-live property (in milliseconds).
+# 当配置为true时，每隔5分钟分拉取config server信息（INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://127.0.0.1:18020）
 health:
   config:
     enabled: true
@@ -145,3 +150,12 @@ management:
     health:
       # 显示健康具体信息，默认不会显示详细信息
       show-details: always
+
+# 日志配置
+logging:
+  # 日志级别配置
+  level:
+    # 不输出 Resolving eureka endpoints via configuration
+    com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: warn
+    # 不输出 Fetching config from server at : http://ip:port
+    org.springframework.cloud.config.client: warn
