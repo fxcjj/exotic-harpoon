@@ -340,6 +340,7 @@ spring:
 c) 测试
 修改user-dev.yml文件，添加haha参数。
 依次启动eureka,config,user,访问user模块的 localhost:18070/test/haha
+注意：当修改了配置文件，需要重启config模块及相关模块
 
 5 自动刷新配置文件
 a) 在config模块pom.xml中配置
