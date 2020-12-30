@@ -19,6 +19,11 @@ spring:
     # 2. 当未配置此项或配置为空（如：${config.active:}），默认为default,且不打印日志
     # 3. 当配置为：dev, test, prod时，打印日志
     active: ${config.active:dev}
+  boot:
+    admin:
+      discovery:
+        # 不显示admin的监控信息
+        ignored-services: ${spring.application.name}
 
 # 日志配置
 logging:

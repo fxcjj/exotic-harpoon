@@ -157,5 +157,5 @@ logging:
   level:
     # 不输出 Resolving eureka endpoints via configuration
     com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: warn
-    # 不输出 Fetching config from server at : http://ip:port
+    # 不输出 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ip:port
     org.springframework.cloud.config.client: warn

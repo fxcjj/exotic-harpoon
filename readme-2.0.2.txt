@@ -474,6 +474,12 @@ spring:
     user:
       name: admin
       password: 123456
+  boot:
+    admin:
+      discovery:
+        # 不显示admin的监控信息
+        ignored-services: ${spring.application.name}
+
 # 将服务注册到eureka
 eureka:
   client:

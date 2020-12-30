@@ -79,6 +79,8 @@ logging:
     com.vic.repository: INFO
     # 不输出 Resolving eureka endpoints via configuration
     com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: warn
+    # 不输出 INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: classpath:/gate/api-gateway-dev.yml
+    org.springframework.cloud.config.server.environment: warn
     # 调试使用
   #    org: trace
   file:
