@@ -129,7 +129,7 @@ eureka:
     # Indicates how often(in seconds) to fetch the registry information from the eureka server
     registry-fetch-interval-seconds: 5
     service-url:
-      defaultZone: http://${eureka.host:127.0.0.1}:${eureka.port:18010}/eureka
+      defaultZone: http://${eureka.host:127.0.0.1}:${eureka.port:8761}/eureka
   instance:
     #
     prefer-ip-address: true
