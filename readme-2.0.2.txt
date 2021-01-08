@@ -100,7 +100,21 @@ c) Instances currently registered with Eureka
 # Availability Zones
 
 # Status
-该列显示每个实例的instance ID和实例状态，如：UP (1) - 192.168.141.78:eureka01:8761，点击会跳转到 http://peer1:8761/actuator/info
+该列显示每个实例的instance ID和实例状态
+
+1) 当配置了 instance-id, 同时也配置了 prefer-ip-address 时，则展示 instance-id 配置的值，如：UP (1) - 192.168.141.78:8761。
+点击地址，当instance-id配置为主机名(${spring.cloud.client.hostname}:${server.port})或者ip(${spring.cloud.client.ip-address}:${server.port})时，如：instance-id: ${spring.cloud.client.hostname}:${server.port}，
+则跳转地址为：http://192.168.141.78:8761/actuator/info，也就是说优先使用了ip。
+
+2) 当配置了 instance-id, 未配置了 prefer-ip-address 时，则展示 instance-id 配置的值，如：UP (1) - 192.168.141.78:8761。
+点击地址，当instance-id配置为主机名(${spring.cloud.client.hostname}:${server.port})或者ip(${spring.cloud.client.ip-address}:${server.port})时，如：instance-id: ${spring.cloud.client.hostname}:${server.port}，
+则跳转地址为：http://peer1:8761/actuator/info
+
+3) 当未配置 instance-id，未配置 prefer-ip-address 时，则展示的值取 instance-id 的默认值（当前eureka机器的主机名:应用名:端口，即 ${spring.cloud.client.hostname}:${spring.application.name}:${server.port}），如：192.168.141.78:eureka02:8761。
+此时点击Status下的地址，则跳转地址为：http://peer1:8761/actuator/info
+
+4) 当未配置 instance-id，配置了 prefer-ip-address 时，则展示的值取 instance-id 的默认值（当前eureka机器的主机名:应用名:端口，即 ${spring.cloud.client.hostname}:${spring.application.name}:${server.port}），如：192.168.141.78:eureka02:8761。
+点击地址，则跳转地址为：http://192.168.141.78:8761/actuator/info，也就是说优先使用了ip。
 
 d) General Info
 当前实例基本状况
@@ -222,6 +236,7 @@ http://localhost:8763/
 问题1：为什么unavailable-replicas中出现服务，而 available-replicas 没有服务？
 答：在同一台服务器上，当eureka集群中各个节点的eureka.instance.hostname相同时，会被标记为 unavailable-replicas。
 此处配置的eureka.instance.hostname为peer1/peer2/peer3。取的是hosts文件中对应的ip，因为三个ip相同，所以被标记为 unavailable-replicas。
+如果要显示正常，则
 
 问题2：
 
