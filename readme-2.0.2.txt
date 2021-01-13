@@ -78,7 +78,7 @@ eureka:
 #    use-read-only-response-cache: false
 
 2.2 eureka集群高可用部署
-参考 fxcjj/eureka-ha 项目
+参考 https://github.com/fxcjj/eureka-ha 项目
 
 2.3 创建配置中心config项目
 a) 引入依赖

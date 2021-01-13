@@ -3,8 +3,6 @@ server:
 spring:
   application:
     name: eureka01
-  # 加上这个，启动时一直使用8080端口！
-#  profiles: peer1
 eureka:
   # eureka实例相关配置
   instance:
@@ -20,17 +18,18 @@ eureka:
     # 注册到eureka中的唯一标记，目前作用仅是显示
     # 默认取值为 主机名:应用名:端口，即 ${spring.cloud.client.hostname}:${spring.application.name}:${server.port}
     # 当前启动Eureka的机器的IP: ${spring.cloud.client.ip-address}
-    instance-id: ${spring.cloud.client.ip-address}:${server.port}:${eureka.instance.appname}
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
 
     # 集群中各服务之间互相访问默认使用hostname进行，但是这样需要在各个机器上配置hosts文件。将该配置设为true，可以尽量使用ip进行通信
-    prefer-ip-address: true
+    prefer-ip-address: false
 
-#    appname: eureka01
+    # Get the name of the application to be registered with eureka.
+    appname: eureka-server
   client:
     service-url:
       # 集群环境中，其它的eureka节点
-#      defaultZone: http://192.168.6.131:8762/eureka/,http://192.168.6.135:8763/eureka/
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#      defaultZone: http://localhost:8762/eureka/,http://localhost:8763/eureka/
     # 指示此实例是否应将其信息注册到eureka服务器以供其他人发现
     # 如果是单个节点，应该设置为false，表示自己就是注册中心，不用注册自己。
     # 在集群环境中，应该设置为true，表示注册自己（defaultZone不用填自己地址，填写其它eureka服务地址）
