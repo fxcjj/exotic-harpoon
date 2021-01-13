@@ -693,6 +693,8 @@ hystrix.timeoutInMilliseconds   >=  ribbonTimeout = (ribbonReadTimeout + ribbonC
 所以console会打印如下信息：
 2020-12-23 14:52:52 - [api-gateway,,,] - The Hystrix timeout of 50000ms for the command order is set lower than the combination of the Ribbon read and connect timeout, 80000ms.
 
+参考 https://github.com/fxcjj/exotic-zuul 项目
+
 8.5 过滤器
 过滤器生命周期：
 a) pre filters
