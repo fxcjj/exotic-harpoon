@@ -13,7 +13,7 @@ zuul:
   routes:
     # 第一种写法 访问 /myProduct/product/list 映射到 /product/product/list
     # 唯一标记
-    aaa:
+#    aaa:
 #      path: /myProduct/**
 #      serviceId: product
       # 针对此应用设置不过滤敏感头（默认过滤Cookie, Set-Cookie, Authorization），即应用接收所有头
