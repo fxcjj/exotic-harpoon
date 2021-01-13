@@ -10,7 +10,7 @@ zuul:
   ignored-services: user-service,order-service
 
   # 配置自定义路由
-  routes:
+#  routes:
     # 第一种写法 访问 /myProduct/product/list 映射到 /product/product/list
     # 唯一标记
 #    aaa:
