@@ -1,5 +1,4 @@
 1 版本说明
-1.1 分支1.0.0使用版本
 spring cloud版本为：Hoxton.SR9
 spring boot版本为：2.3.5.RELEASE
 spring boot admin版本为：2.3.1

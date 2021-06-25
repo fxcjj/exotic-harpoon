@@ -1,5 +1,4 @@
 1 版本说明
-1.1 分支1.0.0使用版本
 spring cloud版本为：Finchley.SR2
 spring boot版本为：2.0.6.RELEASE
 
