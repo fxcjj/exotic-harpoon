@@ -43,12 +43,13 @@ eureka:
   instance:
     # eureka实例主机名
     hostname: localhost
-    # 表示在eureka server在接收到上一个心跳之后等待下一个心跳的秒数（默认90秒），若不能在指定时间内收到心跳，则移除此实例，并禁止此实例的流量
-    # 必须高于 lease-renewal-interval-in-seconds
-#    lease-expiration-duration-in-seconds: 90
     # 表示 Eureka Client 向 Eureka Server 发送心跳的频率（默认 30 秒），
-    # 如果在 lease-expiration-duration-in-seconds 指定的时间内未收到心跳，则移除该实例。貌似在eureka server中配置没什么用处！
-#    lease-renewal-interval-in-seconds: 20
+    # 如果在 lease-expiration-duration-in-seconds 指定的时间内未收到心跳，则移除该实例。
+    lease-renewal-interval-in-seconds: 3
+    # 表示eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，即在这个时间内若没收到 eureka client 的心跳，则将移除该instance
+    # 注意：如果该值太大，则很可能将流量转发过去的时候，该instance已经不存活了。
+    # 如果该值太小，则instance很可能因为临时的网络抖动而被移除掉。该值应该大于 lease-renewal-interval-in-seconds
+    lease-expiration-duration-in-seconds: 10
   client:
     service-url:
       # 集群环境中，其它的eureka节点

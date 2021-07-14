@@ -57,7 +57,7 @@ feign:
         # feign接口默认读取超时配置
         readTimeout: 60000
         loggerLevel: full
-      # 指定服务的feign配置
+      # 对指定的服务进行feign配置
   #      producer1:
   #        connectTimeout: 5000
   #        readTimeout: 8000
@@ -104,7 +104,7 @@ ribbon:
 # hystrix的超时时间，开关在feign.hystrix.enabled
 hystrix:
   command:
-    # default全局有效，service id指定应用有效
+    # default参数表示全局有效，参数可以为service id，对指定应用有效
     default:
       execution:
         timeout:
@@ -133,10 +133,13 @@ eureka:
   instance:
     #
     prefer-ip-address: true
-    # eureka client发送心跳给server端的频率。如果在leaseExpirationDurationInSeconds后，server端没有收到client的心跳，则将摘除该instance
+    # 表示 Eureka Client 向 Eureka Server 发送心跳的频率（默认 30 秒），
+    # 如果在 lease-expiration-duration-in-seconds 指定的时间内未收到心跳，则移除该实例。
     lease-renewal-interval-in-seconds: 3
-    # 告知服务端N秒还未收到心跳的话，就将该服务移除列表
-    # eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，在这个时间内若没收到下一次心跳，则将移除该instance
+    # 表示eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，即在这个时间内若没收到 eureka client 的心跳，则将移除该instance
+    # 注意：如果该值太大，则很可能将流量转发过去的时候，该instance已经不存活了。
+    # 如果该值太小，则instance很可能因为临时的网络抖动而被移除掉。
+    # 该值应该大于 lease-renewal-interval-in-seconds
     lease-expiration-duration-in-seconds: 10
 
 # 端点配置
